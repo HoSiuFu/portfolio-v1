@@ -1,6 +1,6 @@
 ---
 title: 'Test 123'
-status: 'draft'
+status: 'published'
 author:
   name: 'Danilo Andrade'
   picture: 'https://avatars.githubusercontent.com/u/35849416?v=4'
