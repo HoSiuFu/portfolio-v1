@@ -1,2 +1,2 @@
-# portfolio-v1
-This is a project that will be used to store everything that is done in the 1st version of the portfolio
+## Portfolio Version 1
+This is a project that will arbor the first version of my portfolio as well as the updates made to this portfolio.
