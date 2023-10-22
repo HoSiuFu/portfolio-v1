@@ -2,7 +2,9 @@
     all: unset;
     position: relative;
     border-radius: 100%;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0.3125rem;
 
     &:hover {

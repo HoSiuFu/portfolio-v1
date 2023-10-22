@@ -21,8 +21,7 @@
     "outstatic": "^0.0.41",
     "react": "^18",
     "react-dom": "^18",
-    "sass": "^1.69.4",
-    "storybook": "^7.5.1"
+    "sass": "^1.69.4"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.5.1",
@@ -48,6 +47,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-storybook": "^0.6.15",
     "prettier": "3.0.3",
+    "storybook": "^7.5.1",
     "typescript": "^5"
   },
   "packageManager": "yarn@3.6.4"
