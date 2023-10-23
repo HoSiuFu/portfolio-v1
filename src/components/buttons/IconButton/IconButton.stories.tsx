@@ -41,7 +41,7 @@ export const Button: IconButtonStory = {
 
 export const Link: IconButtonStory = {
     args: {
-        url: '',
+        url: '#',
         target: '_blank',
     },
 }
