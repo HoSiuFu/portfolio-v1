@@ -13,6 +13,14 @@ const config: StorybookConfig = {
     name: "@storybook/nextjs",
     options: {},
   },
+  previewBody: (body) => `
+  <style>
+    body {
+      font-family: Kanit;
+    }
+  </style>
+  ${body}
+`,
   docs: {
     autodocs: "tag",
   },

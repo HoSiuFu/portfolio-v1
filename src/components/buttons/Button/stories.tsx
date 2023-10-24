@@ -41,7 +41,9 @@ const meta: ButtonMeta = {
     },
     args: {
         size: 'large',
-        onClick: () => {},
+        onClick: () => {
+            console.log('teste')
+        },
         children: 'Label',
         disabled: false,
     },

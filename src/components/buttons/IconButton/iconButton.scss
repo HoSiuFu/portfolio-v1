@@ -1,4 +1,4 @@
-.icon-button {
+a.icon-button, button.icon-button {
     all: unset;
     position: relative;
     overflow: hidden;
@@ -10,6 +10,11 @@
     vertical-align: middle;
 
     @include centralRippleEffect;
+
+    &::after {
+        border-radius: 100%;
+        background: rgba($white, 0.75);
+    }
     
     &:hover {
         background: rgba($black, 0.1);
