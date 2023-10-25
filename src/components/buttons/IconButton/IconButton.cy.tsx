@@ -15,7 +15,7 @@ describe('<IconButton />', () => {
 
     it('It is an anchor element', () => {
         cy.mount(
-            <IconButton url='https://github.com' target='_blank'>
+            <IconButton href='https://github.com' target='_blank'>
                 <GitHubIcon />
             </IconButton>
         )
@@ -38,7 +38,7 @@ describe('<IconButton />', () => {
     it('Fallbacks onto anchor element if "url" is given as an prop along with the all the others props', () => {
         cy.mount(
             <IconButton
-                url='https://github.com'
+                href='https://github.com'
                 target='_blank'
                 onClick={() => {
                     console.log('Test')

@@ -15,9 +15,9 @@ const meta: IconButtonMeta = {
         onClick: {
             description:
                 'Defines the function that is triggered when the IconButton is clicked. It receives a MouseEvent as an argument. \n' +
-                'It should not be used in conjuction with the url or target property.',
+                'It should not be used in conjuction with the href or target property.',
         },
-        url: {
+        href: {
             description:
                 'Defines the path/url to travel to. \nShould not be used in conjuction with the onClick property.',
         },
@@ -41,7 +41,7 @@ export const Button: IconButtonStory = {
 
 export const Link: IconButtonStory = {
     args: {
-        url: '#',
+        href: '#',
         target: '_blank',
     },
 }

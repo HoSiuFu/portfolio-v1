@@ -2,8 +2,8 @@ import { StoryObj, Meta } from '@storybook/react'
 
 export default interface IconButtonProps {
     children: React.ReactNode
-    url?: string
-    target?: string
+    href?: string
+    target?: React.HTMLAttributeAnchorTarget
     onClick?: (e?: React.MouseEvent<HTMLElement>) => void
 }
 
