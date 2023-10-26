@@ -1,7 +1,8 @@
 import React from 'react'
 import { IconButton } from '@/components/buttons'
 import NavbarProps from './type'
-import { BrandIcon } from '@/components/icons'
+import { BrandIcon, GitHubIcon, LinkedInIcon } from '@/components/icons'
+import NavLink from '../NavLink'
 
 const Navbar = (props: NavbarProps) => {
     return (
@@ -11,6 +12,49 @@ const Navbar = (props: NavbarProps) => {
                     <IconButton href='/'>
                         <BrandIcon className='brand-icon' />
                     </IconButton>
+
+                    <nav className='nav'>
+                        <ul className='menu'>
+                            <li>
+                                <NavLink href='/' key='home'>
+                                    Home
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink href='/about' key='about'>
+                                    About
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink href='/projects' key='projects'>
+                                    Projects
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink href='/contacts' key='contacts'>
+                                    Contacts
+                                </NavLink>
+                            </li>
+                        </ul>
+                        <ul className='socials'>
+                            <li>
+                                <IconButton
+                                    href='https://github.com/HoSiuFu'
+                                    target='_blank'
+                                >
+                                    <GitHubIcon className='icon' />
+                                </IconButton>
+                            </li>
+                            <li>
+                                <IconButton
+                                    href='https://www.linkedin.com/in/danilo-m-andrade/'
+                                    target='_blank'
+                                >
+                                    <LinkedInIcon className='icon' />
+                                </IconButton>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </header>

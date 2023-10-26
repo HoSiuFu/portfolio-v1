@@ -1,4 +1,5 @@
 header.nav-header {
+    position: sticky;
     display: flex;
     align-self: stretch;
     align-items: center;
@@ -16,6 +17,19 @@ header.nav-header {
         .brand-icon {
             width: 3.4375rem;
             height: 3.4375rem;
+        }
+
+        .nav {
+            .menu {
+                
+            }
+
+            .socials {
+                .icon {
+                    width: 1.875rem;
+                    height: 1.875rem;
+                }
+            }
         }
     }
 }
