@@ -1,8 +1,11 @@
 import React from 'react'
+import IconProps from './type'
 
-const BrandIcon = () => {
+const BrandIcon = (props: IconProps) => {
     return (
         <svg
+            className={props.className}
+            style={props.styles}
             width='201'
             height='201'
             viewBox='0 0 201 201'
