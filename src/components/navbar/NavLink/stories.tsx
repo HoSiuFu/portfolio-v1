@@ -2,7 +2,7 @@ import NavLink from '.'
 import { NavLinkMeta } from './type'
 
 const meta: NavLinkMeta = {
-    title: 'Navbar/NavLink',
+    title: 'Atoms/Navbar/NavLink',
     component: NavLink,
     argTypes: {
         href: {

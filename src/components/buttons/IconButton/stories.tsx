@@ -1,10 +1,10 @@
-import { GitHubIcon } from '../../icons/index'
+import { GitHubIcon } from '@/components/icons'
 import IconButton from '.'
 import React from 'react'
 import { IconButtonMeta, IconButtonStory } from './type'
 
 const meta: IconButtonMeta = {
-    title: 'Buttons/IconButton',
+    title: 'Atoms/Buttons/IconButton',
     component: IconButton,
     argTypes: {
         children: {

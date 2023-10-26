@@ -4,7 +4,7 @@ import Button from '.'
 import { ButtonStory, ButtonMeta } from './type'
 
 const meta: ButtonMeta = {
-    title: 'Buttons/Button',
+    title: 'Atoms/Buttons/Button',
     component: Button,
     argTypes: {
         type: {
