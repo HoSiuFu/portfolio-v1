@@ -15,3 +15,23 @@
         @content;
     }
 }
+
+@mixin applyToMultipleMedia($keys...) {
+    @each $key in $keys {
+        @if ($key == desktop) {
+            @include desktop {
+                @content;
+            }
+        }
+        @else if ($key == tablet) {
+            @include tablet {
+                @content;
+            }
+        }
+        @else if ($key == mobile) {
+            @include mobile {
+                @content;
+            }
+        }
+    }
+}
