@@ -1,6 +1,6 @@
 import Banner from '.'
 import { BannerMeta, BannerStory } from './type'
-import BackgroundImage from '../../../../public/images/daniel-j-schwarz-fOXMXAJ8vgM-unsplash.jpg'
+import BackgroundImage from '../../../../public/images/front.png'
 
 const meta: BannerMeta = {
     title: 'Atoms/Page Elements/Banner',
