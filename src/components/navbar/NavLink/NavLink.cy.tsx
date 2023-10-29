@@ -1,4 +1,5 @@
 import React from 'react'
+import '@/styles/global.scss'
 import NavLink from '.'
 import Router from 'next/router'
 

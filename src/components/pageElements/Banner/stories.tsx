@@ -1,5 +1,6 @@
 import Banner from '.'
 import { BannerMeta, BannerStory } from './type'
+import BackgroundImage from '../../../../public/images/daniel-j-schwarz-fOXMXAJ8vgM-unsplash.jpg'
 
 const meta: BannerMeta = {
     title: 'Atoms/Page Elements/Banner',
@@ -14,9 +15,11 @@ const meta: BannerMeta = {
         text: {
             description: 'Defines the text of the banner',
         },
-        backgroundImage: {
+        backgroundProperties: {
             description:
-                'Defines the image that is to be applied to the background of the banner.',
+                'Defines the properties to be applied to the background of the banner through styles.' +
+                'It is ment to be a way to be able to pass different images for the background, ' +
+                'and other properties such as size and position, etc..',
         },
     },
     args: {
@@ -28,4 +31,22 @@ const meta: BannerMeta = {
 
 export default meta
 
-export const Default: BannerStory = {}
+export const NoBackground: BannerStory = {}
+
+export const WithBackgroundImage: BannerStory = {
+    args: {
+        backgroundProperties: {
+            backgroundImage: `url(${BackgroundImage.src})`,
+        },
+    },
+}
+
+export const WithImageAndPropertiesSent: BannerStory = {
+    args: {
+        backgroundProperties: {
+            backgroundImage: `url(${BackgroundImage.src})`,
+            backgroundSize: '150%, 150%, cover',
+            backgroundPositionY: '30%',
+        },
+    },
+}
