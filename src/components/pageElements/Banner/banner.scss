@@ -8,7 +8,16 @@ div.banner {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     min-height: 27.5rem;
 
+    @include desktop {
+        padding: 1.25rem 1.5rem;
+    }
+
+    @include tablet {
+        padding: 1.25rem  1.25rem;
+    }
+
     @include mobile {
+        padding: 1.25rem 0.625rem;
         min-height: 16rem;
     }
 
@@ -18,7 +27,6 @@ div.banner {
         align-items: center;
         flex-flow: column;
         gap: 0.625rem;
-        padding: 1.25rem 0;
 
         .title {
             color: $white;

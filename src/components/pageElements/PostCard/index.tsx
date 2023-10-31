@@ -8,7 +8,7 @@ import DefaultPlaceholder from '@/../public/imagePlaceholder.svg'
 import { UseBreakpointReturn } from '@/hooks/useBreakpoints/type'
 import { ButtonSize } from '@/components/buttons/Button/type'
 import useBreakpoints from '@/hooks/useBreakpoints/useBreakpoints'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 
 const setButtonSize = (breakpoint: UseBreakpointReturn): ButtonSize => {
     if (breakpoint === 'mobile') return 'small'
