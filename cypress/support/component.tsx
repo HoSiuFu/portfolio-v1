@@ -20,6 +20,32 @@ import './commands'
 // require('./commands')
 
 import { mount } from 'cypress/react18'
+import { AppRouterContext, AppRouterInstance } from 'next/dist/shared/lib/app-router-context.shared-runtime'
+import React, { Children } from 'react'
+
+const createRouter = (params: Partial<AppRouterInstance>) => ({
+  back: cy.spy().as('back'),
+  forward: cy.spy().as('forward'),
+  prefetch: cy.stub().as('prefetch').resolves(),
+  push: cy.spy().as('push'),
+  replace: cy.spy().as('replace'),
+  refresh: cy.spy().as('refresh'),
+  ...params,
+})
+
+interface MockNextRouterProps extends Partial<AppRouterInstance> {
+  children: React.ReactNode
+}
+
+const MockNextRouter = ({children, ...props}: MockNextRouterProps): React.ReactNode => {
+  const router = createRouter(props as AppRouterInstance)
+
+  return (
+    <AppRouterContext.Provider value={router}>
+      {children}
+    </AppRouterContext.Provider> 
+  )
+}
 
 // Augment the Cypress namespace to include type definitions for
 // your custom command.
@@ -29,11 +55,16 @@ declare global {
   namespace Cypress {
     interface Chainable {
       mount: typeof mount
+      mountNextRouter: typeof mount
     }
   }
 }
 
 Cypress.Commands.add('mount', mount)
+
+Cypress.Commands.add('mountNextRouter', (component, options = {}) => {
+  return mount(<MockNextRouter {...options} >{component}</MockNextRouter>)
+})
 
 // Example use:
 // cy.mount(<MyComponent />)

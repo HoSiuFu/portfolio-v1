@@ -4,6 +4,6 @@ import PostCard from '.'
 
 describe('<PostCard />', () => {
     it('Renders', () => {
-        cy.mount(<PostCard title='title' postUrl='#' />)
+        cy.mountNextRouter(<PostCard title='title' postUrl='#' />)
     })
 })
