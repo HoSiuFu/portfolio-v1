@@ -1,6 +1,6 @@
 {
-  "commit": "3c4ec2c05f9e8a627a647947b2c6eb2831dc9c24",
-  "generated": "2023-11-02T19:23:08.605Z",
+  "commit": "19d5df5bc7ba78d5603e795741ffb5af8fa56b3e",
+  "generated": "2023-11-02T19:23:11.991Z",
   "metadata": [
     {
       "__outstatic": {
@@ -49,24 +49,6 @@
       "slug": "couple-pizza",
       "status": "published",
       "title": "Couple Pizza"
-    },
-    {
-      "__outstatic": {
-        "commit": "b22b0f4f3d38a659cbab9b89ac2b7394f2446de4",
-        "hash": "425893791",
-        "path": "outstatic/content/projects/flycream-travel.md"
-      },
-      "author": {
-        "name": "Andre Vitorio",
-        "picture": "https://avatars.githubusercontent.com/u/1417109?v=4"
-      },
-      "collection": "projects",
-      "coverImage": "/images/flycream-travel.png",
-      "description": "One more day, one more joy. I feel blessed.",
-      "publishedAt": "2022-09-14T17:55:40.452Z",
-      "slug": "flycream-travel",
-      "status": "published",
-      "title": "Flycream Travel"
     },
     {
       "__outstatic": {
