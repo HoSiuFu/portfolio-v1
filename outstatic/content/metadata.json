@@ -1,6 +1,6 @@
 {
-  "commit": "460746971ebe041613093d94067311b3dccc0328",
-  "generated": "Thu, 02 Nov 2023 19:28:18 GMT",
+  "commit": "d28b43f6b55d4150a09ab31aef213fa89b91a14e",
+  "generated": "2023-11-02T19:29:18.519Z",
   "metadata": [
     {
       "__outstatic": {
@@ -53,6 +53,24 @@
       "slug": "couple-pizza",
       "status": "published",
       "title": "Couple Pizza"
+    },
+    {
+      "__outstatic": {
+        "commit": "d28b43f6b55d4150a09ab31aef213fa89b91a14e",
+        "hash": "2973652843",
+        "path": "outstatic/content/projects/placeholder-for-tests.md"
+      },
+      "author": {
+        "name": "",
+        "picture": ""
+      },
+      "collection": "projects",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2023-11-02T19:28:44.800Z",
+      "slug": "placeholder-for-tests",
+      "status": "draft",
+      "title": "Placeholder For tests"
     }
   ]
 }
