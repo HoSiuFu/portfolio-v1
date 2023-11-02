@@ -10,15 +10,15 @@ header.nav-header {
     z-index: 3;
 
     @include desktop {
-        padding: 0.625rem 1.5rem;
+        padding: 0.125rem 1.5rem;
     }
 
     @include tablet {
-        padding: 0.625rem  1.25rem;
+        padding: 0.125rem  1.25rem;
     }
 
     @include mobile {
-        padding: 0.625rem 0.625rem;
+        padding: 0.125rem 0.625rem;
     }
 
     .flex-layout {
