@@ -2,7 +2,6 @@ import React from 'react'
 import BannerProps from './type'
 
 const Banner = (props: BannerProps) => {
-    console.log(props.backgroundProperties)
     return (
         <div className='banner' style={props.backgroundProperties}>
             <div className='layout'>

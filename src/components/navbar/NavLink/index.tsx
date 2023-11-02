@@ -1,22 +1,22 @@
+'use client'
+
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import NavLinkProps from './type'
-import { useRouter } from 'next/router'
+import { usePathname } from 'next/navigation'
 
 const NavLink = (props: NavLinkProps) => {
-    const { asPath, isReady } = useRouter()
+    const activePathname = usePathname()
     const [isActive, setIsActive] = useState<boolean>(false)
 
     useEffect(() => {
-        if (isReady) {
+        if (activePathname) {
             const linkPathname = new URL(props.href as string, location.href)
                 .pathname
 
-            const activePathname = new URL(asPath, location.href).pathname
-
             setIsActive(linkPathname === activePathname)
         }
-    }, [isReady, asPath, props.href])
+    }, [activePathname, props.href])
 
     return (
         <Link

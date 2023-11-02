@@ -31,6 +31,6 @@ export const Default = {
 
 export const Active = {
     args: {
-        href: 'http://localhost:6006/?path=/story/navbar-navlink--active',
+        href: '/',
     },
 }

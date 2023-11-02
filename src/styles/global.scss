@@ -7,6 +7,8 @@
 @import './guidelines';
 @import './animations';
 
+@import '../app/home.scss';
+
 @import '../components/buttons/IconButton/iconButton.scss';
 @import '../components/buttons/Button/button.scss';
 @import '../components/navbar/NavLink/navLink.scss';
@@ -28,16 +30,5 @@ body {
   flex-flow: column;
   align-items: center;
   overflow: hidden auto;
-
-  @include desktop {
-    padding: 1.5rem;
-  }
-
-  @include tablet {
-    padding: 1.25rem;
-  }
-
-  @include mobile {
-    padding: 0.625rem;
-  }
+  z-index: 0;
 }
