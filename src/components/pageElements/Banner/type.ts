@@ -12,9 +12,9 @@ export interface BackgroundProperties {
 }
 
 export default interface BannerProps {
-    title?: string
-    subtitle?: string
-    text?: string
+    title?: React.ReactNode
+    subtitle?: React.ReactNode
+    text?: React.ReactNode
     backgroundProperties?: BackgroundProperties
 }
 

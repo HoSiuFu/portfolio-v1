@@ -1,6 +1,7 @@
 import Banner from '.'
 import { BannerMeta, BannerStory } from './type'
 import BackgroundImage from '../../../../public/images/front.png'
+import React from 'react'
 
 const meta: BannerMeta = {
     title: 'Atoms/Page Elements/Banner',
@@ -23,9 +24,9 @@ const meta: BannerMeta = {
         },
     },
     args: {
-        title: 'Title',
-        subtitle: 'Subtitle',
-        text: 'Text',
+        title: <>Title</>,
+        subtitle: <>Subtitle</>,
+        text: <>Text</>,
     },
 }
 
