@@ -1,0 +1,88 @@
+div.outter-about {
+    display: flex;
+    align-self: stretch;
+    justify-content: center;
+    margin: 1.875rem 0;
+
+    @include desktop {
+        padding: 0 1.5rem;
+    }
+
+    @include tablet {
+        padding: 0 1.25rem;
+    }
+
+    @include mobile {
+        padding: 0 0.625rem;
+    }
+
+    
+
+    .about {
+        display: flex;
+        align-self: stretch;
+        flex-flow: column;
+        align-items: flex-start;
+        gap: 1.875rem;
+
+        h1.title {
+            color: $dark-gray-1;
+            text-align: justify;
+        }
+    
+        h2.subtitle {
+            color: $dark-gray-1;
+            text-align: justify;
+        }
+    
+        h3.date {
+            color: $dark-gray-0;
+            text-align: justify;
+        }
+        
+        a.link {
+            color: $dark-gray-0;
+            text-align: justify;
+        }
+        
+        p.text {
+            color: $dark-gray-1;
+            text-align: justify;
+        }
+
+        ul.aligned-list {
+            margin-left: 0;
+            padding-left: 0;
+            list-style-type: disc;
+            
+            li {
+                margin-left: 2em;
+    
+                .upper-item-content {
+                    display: flex;
+                    flex-flow: column;
+                    margin-left: 1em;
+
+                    &.spaced {
+                        gap: 0.625rem;
+                    }
+
+                    ul.aligned-list {
+                        li.text {
+                            color: $dark-gray-1;
+                            text-align: justify;
+                        }
+                    }
+                }
+            }
+        }
+
+        .section {
+            display: flex;
+            align-self: stretch;
+            flex-direction: column;
+            gap: 0.625rem;
+            align-items: flex-start;
+        }
+    }
+}

@@ -1,6 +1,5 @@
 import Banner from '@/components/pageElements/Banner'
 import React from 'react'
-import BannerBackground from 'public/images/fcc26c72d326c15deb2429107d2c3903.png'
 import { MaintenanceIcon } from '@/components/icons'
 import { getLatestProjects } from '@/actions/outstatic'
 import PostCard from '@/components/pageElements/PostCard'
@@ -11,12 +10,18 @@ const Home = async () => {
     return (
         <>
             <Banner
-                title="Welcome, I'm Danilo!"
-                subtitle='Frontend Developer and much more!'
-                text={`This is my portfolio to show you what I've done throughout the years.
-                    In this portfolio I will display all my works in all different areas that interest me.`}
+                title={<>Welcome, I&apos;m Danilo!</>}
+                subtitle={<>Frontend Developer and much more!</>}
+                text={
+                    <>
+                        This is my portfolio to show you what I&apos;ve done
+                        throughout the years. <br />
+                        In this portfolio I will display all my works in all
+                        different areas that interest me.
+                    </>
+                }
                 backgroundProperties={{
-                    backgroundImage: `url(${BannerBackground.src})`,
+                    backgroundImage: `url('/images/fcc26c72d326c15deb2429107d2c3903.png')`,
                     backgroundPositionX: '50%',
                 }}
             />
@@ -44,7 +49,7 @@ const Home = async () => {
                                             Seems like there are no posts yet!
                                         </h2>
                                         <h3 className='h3 subtitle'>
-                                            Don&#39;t worry this will be
+                                            Don&apos;t worry this will be
                                             populated soon.
                                         </h3>
                                     </div>
