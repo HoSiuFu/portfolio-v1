@@ -1,5 +1,5 @@
-import Banner from '@/components/pageElements/Banner'
 import React from 'react'
+import { Banner } from '@/components/pageElements'
 
 const About = () => {
     return (

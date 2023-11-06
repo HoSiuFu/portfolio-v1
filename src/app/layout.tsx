@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
-import React from 'react'
+import React, { Suspense } from 'react'
 import localFont from 'next/font/local'
 import '@/styles/global.scss'
 import Navbar from '@/components/navbar/Navbar'
-import Footer from '@/components/footer'
+import Footer from '@/components/Footer'
+import MainLoading from './loading'
 
 const kanit = localFont({
     src: [
@@ -113,9 +114,11 @@ export default function RootLayout({
     return (
         <html lang='en'>
             <body className={kanit.className}>
-                <Navbar />
-                {children}
-                <Footer />
+                <Suspense fallback={<MainLoading />}>
+                    <Navbar />
+                    {children}
+                    <Footer />
+                </Suspense>
             </body>
         </html>
     )

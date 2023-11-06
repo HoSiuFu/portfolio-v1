@@ -1,8 +1,7 @@
-import Banner from '@/components/pageElements/Banner'
 import React from 'react'
 import { MaintenanceIcon } from '@/components/icons'
 import { getLatestProjects } from '@/actions/outstatic'
-import PostCard from '@/components/pageElements/PostCard'
+import { Banner, PostCard } from '@/components/pageElements'
 
 const Home = async () => {
     const latestWorks = await getLatestProjects()
