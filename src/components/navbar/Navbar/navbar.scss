@@ -6,7 +6,7 @@ header.nav-header {
     align-items: center;
     justify-content: center;
     background: $white;
-    box-shadow: 0px 4px 8px 0px rgba($black, 0.25);
+    box-shadow: 0 4px 8px 0 rgba($black, 0.25);
     z-index: 3;
 
     @include desktop {
@@ -73,7 +73,7 @@ header.nav-header {
         }
     }
 
-    @include applyToMultipleMedia(tablet, mobile) {
+    @include apply-to-multiple-media(tablet, mobile) {
         .modal {
             position: absolute;
             top:0;
@@ -109,7 +109,7 @@ header.nav-header {
                 position: absolute;
                 overflow: hidden;
                 background-color: $white;
-                box-shadow: -2px 0px 2px 0px rgba($black, 0.25);
+                box-shadow: -2px 0 2px 0 rgba($black, 0.25);
                 top: 0;
                 right:0;
                 max-width: 0;
@@ -124,7 +124,7 @@ header.nav-header {
 
                 
                 .upper-part {
-                    padding: 0.625rem 1.25rem 0 1.25rem;
+                    padding: 0.625rem 1.25rem 0;
                     align-self: stretch;
                     display: flex;
                     align-items: flex-start;
@@ -146,7 +146,7 @@ header.nav-header {
                 .lower-part {
                     align-self: stretch;
                     display: flex;
-                    padding: 0.625rem 1.25rem 0.625rem 1.25rem;
+                    padding: 0.625rem 1.25rem;
 
                     .socials {
                         list-style: none;
@@ -154,6 +154,7 @@ header.nav-header {
                         width: 100%;
                         justify-content: space-between;
                         border-top: 0.0625rem solid $gray-0;
+
                         .icon {
                             width: 1.875rem;
                             height: 1.875rem;
