@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
 
 @import './typos';
 @import './breakpoints';
@@ -7,19 +7,19 @@
 @import './guidelines';
 @import './animations';
 
-@import '../app/home.scss';
-@import '../app/about/about.scss';
-@import '../app/projects/projects.scss';
-@import '../app/contacts/contacts.scss';
+@import '../app/home';
+@import '../app/about/about';
+@import '../app/projects/projects';
+@import '../app/contacts/contacts';
 
-@import '../components/buttons/IconButton/iconButton.scss';
-@import '../components/buttons/Button/button.scss';
-@import '../components/navbar/NavLink/navLink.scss';
-@import '../components/navbar/Navbar/navbar.scss';
-@import '../components/pageElements/Banner/banner.scss';
-@import '../components/pageElements/PostCard/postCard.scss';
-@import '../components/Footer/footer.scss';
-@import '../components/pageElements/Loading/loading.scss';
+@import '../components/buttons/IconButton/iconButton';
+@import '../components/buttons/Button/button';
+@import '../components/navbar/NavLink/navLink';
+@import '../components/navbar/Navbar/navbar';
+@import '../components/pageElements/Banner/banner';
+@import '../components/pageElements/PostCard/postCard';
+@import '../components/Footer/footer';
+@import '../components/pageElements/Loading/loading';
 
 * {
   box-sizing: border-box;

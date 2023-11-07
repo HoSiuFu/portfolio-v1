@@ -32,8 +32,7 @@ div.outter-latest {
         .posts {
             display: flex;
             flex-flow: row wrap;
-            align-content: center;
-            justify-content: center;
+            place-content: center center;
             align-items: center;
             gap: 1.5rem;
             align-self: stretch;
@@ -50,8 +49,7 @@ div.outter-latest {
                 margin: auto;
                 display: flex;
                 flex-flow: row wrap;
-                justify-content: center;
-                align-content: center;
+                place-content: center center;
                 align-items: center;
                 gap: 1.3125rem;
 
