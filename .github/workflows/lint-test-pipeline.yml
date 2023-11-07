@@ -12,8 +12,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-      - name: Install yarn and dependencies
+      - name: Install yarn
         run: npm install -g yarn
+      - run: yarn install --frozen-lockfile
       - name: Execute Linting procedures
         run: yarn lint
       - name: Test components
