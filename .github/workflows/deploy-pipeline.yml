@@ -14,7 +14,6 @@ jobs:
     if: github.repository == 'HoSiuFu/portfolio-v1'
     runs-on: ubuntu-latest
     steps:
-      steps:
       - name: Checkout repo to running env
         uses: actions/checkout@v4
       - name: Install Vercel CLI
