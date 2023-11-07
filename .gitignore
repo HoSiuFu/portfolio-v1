@@ -45,3 +45,6 @@ next-env.d.ts
 # cypress
 cypress/videos
 cypress/screenshots
+
+#hygen
+_generated
