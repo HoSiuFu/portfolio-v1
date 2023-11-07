@@ -1,0 +1,29 @@
+footer.footer {
+    margin-top: auto;
+    display: flex;
+    align-self: stretch;
+    justify-content: center;
+    background-color: $dark-gray-1;
+    
+    @include desktop {
+        padding: 1.25rem 1.5rem;
+    }
+
+    @include tablet {
+        padding: 1.25rem;
+    }
+
+    @include mobile {
+        padding: 1.25rem 0.625rem;
+    }
+
+    a.copyright {
+        text-align: center;
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

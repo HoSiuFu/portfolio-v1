@@ -1,95 +1,65 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import React from 'react'
+import { MaintenanceIcon } from '@/components/icons'
+import { getLatestProjects } from '@/actions/outstatic'
+import { Banner, PostCard } from '@/components/pageElements'
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
+const Home = async () => {
+    const latestWorks = await getLatestProjects()
+
+    return (
+        <>
+            <Banner
+                title={<>Welcome, I&apos;m Danilo!</>}
+                subtitle={<>Frontend Developer and much more!</>}
+                text={
+                    <>
+                        This is my portfolio to show you what I&apos;ve done
+                        throughout the years. <br />
+                        In this portfolio I will display all my works in all
+                        different areas that interest me.
+                    </>
+                }
+                backgroundProperties={{
+                    backgroundImage: `url('/images/fcc26c72d326c15deb2429107d2c3903.png')`,
+                    backgroundPositionX: '50%',
+                }}
             />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+            <div className='outter-latest'>
+                <div className='layout'>
+                    <div className='grid-desktop-start-1 grid-desktop-end-13 grid-tablet-start-1 grid-tablet-end-7 grid-mobile-start-1 grid-mobile-end-5 latest'>
+                        <h1 className='h1 latest-title'>Latest Work</h1>
+                        <div className='posts'>
+                            {latestWorks?.length !== 0 ? (
+                                latestWorks.map((work) => (
+                                    <PostCard
+                                        title={work.title}
+                                        postUrl={work.slug}
+                                        cover={work.coverImage}
+                                        description={work.description}
+                                        key={work.slug}
+                                    />
+                                ))
+                            ) : (
+                                <div className='no-posts'>
+                                    <MaintenanceIcon className='maintenance-icon' />
+                                    <div className='text-frame'>
+                                        <h2 className='h2 title'>
+                                            Whoops! <br />
+                                            Seems like there are no posts yet!
+                                        </h2>
+                                        <h3 className='h3 subtitle'>
+                                            Don&apos;t worry this will be
+                                            populated soon.
+                                        </h3>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    )
 }
+
+export default Home

@@ -1,0 +1,21 @@
+name: Linting and Testing Pipeline
+
+on: [push]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo to running env
+        uses: actions/checkout@v4
+      - name: Set up node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install yarn
+        run: npm install -g yarn
+      - run: yarn install --frozen-lockfile
+      - name: Execute Linting procedures
+        run: yarn lint
+      - name: Test components
+        run: yarn component:headless 

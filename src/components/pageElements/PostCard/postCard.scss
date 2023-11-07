@@ -1,0 +1,44 @@
+div.post-card {
+    display: flex;
+    align-items: flex-start;
+    padding: 0.625rem;
+    flex-flow: column;
+    gap: 0.625rem;
+    align-self: stretch;
+    min-width: max-content;
+    border-radius: 0.5rem;
+    background: $white;
+    box-shadow: 0 2px 4px 0 rgba($black, 0.25);
+
+    .cover {
+        width: 100%;
+        align-self: stretch;
+        height: 9.375rem;
+        box-shadow: 0 2px 4px 0 rgba($black, 0.25);
+        object-fit: cover;
+    }
+
+    .title {
+        color: $dark-gray-1;
+    }
+
+    .text {
+        color: $dark-gray-1;
+    }
+
+    @include desktop {
+        .button-div {
+            display: flex;
+            align-self: stretch;
+            justify-content: flex-end;
+        }
+    }
+
+    @include apply-to-multiple-media(mobile, tablet) {
+        .button-div {
+            display: flex;
+            align-self: stretch;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.loading {
+    &-fullscreen {
+        height: 100dvh;
+        width: 100dvw;
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background-color: $gray-0;
+
+        svg {
+            transform: none !important;
+            width: 100% !important;
+            height: auto !important;
+        }
+    }
+
+    &-full-width {
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            transform: none !important;
+            width: 100% !important;
+            height: auto !important;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+div.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    background: $dark-gray-1;
+    background-size: cover;
+    box-shadow: 0 4px 4px 0 rgba($black, 0.25);
+    min-height: 27.5rem;
+
+    @include desktop {
+        padding: 1.25rem 1.5rem;
+    }
+
+    @include tablet {
+        padding: 1.25rem;
+    }
+
+    @include mobile {
+        padding: 1.25rem 0.625rem;
+        min-height: 16rem;
+    }
+
+    .banner-layout {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        gap: 0.625rem;
+
+        .title {
+            color: $white;
+            text-align: center;
+        }
+
+        .subtitle {
+            color: $white;
+            text-align: center;
+        }
+
+        .text {
+            color: $white;
+            text-align: center;
+        }
+    }
+}

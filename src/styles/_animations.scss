@@ -1,0 +1,33 @@
+@mixin central-ripple-effect {
+    &:not(:disabled) {
+        &::after {
+            content: '';
+            opacity: 0;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            transform: scaleX(1) scaleY(1);
+            transition: transform 0.3s, opacity 1s;
+        }
+
+        &:active::after {
+            transform: scale(0,0);
+            opacity: 1;
+            transition: 0s;
+        }
+    }
+}
+
+@keyframes nav-link-hover-animation-color-loop {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 150% 50%;
+    }
+}
