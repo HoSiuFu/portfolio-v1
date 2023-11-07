@@ -10,15 +10,25 @@ import {
     LinkedInIcon,
 } from '@/components/icons'
 import NavLink from '../NavLink'
+import { usePathname } from 'next/navigation'
 
 const Navbar = () => {
+    const pathname = usePathname()
     const [displaySideMenu, setDisplaySideMenu] = useState<boolean>(false)
+    const [currentPathname, setCurrentPathname] = useState<string>('')
 
     const resetSideMenu = () => {
         if (window.innerWidth >= 960) {
             setDisplaySideMenu(false)
         }
     }
+
+    useEffect(() => {
+        if (currentPathname !== pathname) {
+            setDisplaySideMenu(false)
+            setCurrentPathname(pathname || '')
+        }
+    }, [pathname, currentPathname])
 
     useEffect(() => {
         window.addEventListener('resize', resetSideMenu)

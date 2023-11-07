@@ -9,6 +9,8 @@
 
 @import '../app/home.scss';
 @import '../app/about/about.scss';
+@import '../app/projects/projects.scss';
+@import '../app/contacts/contacts.scss';
 
 @import '../components/buttons/IconButton/iconButton.scss';
 @import '../components/buttons/Button/button.scss';
@@ -16,7 +18,8 @@
 @import '../components/navbar/Navbar/navbar.scss';
 @import '../components/pageElements/Banner/banner.scss';
 @import '../components/pageElements/PostCard/postCard.scss';
-@import '../components/footer/footer.scss';
+@import '../components/Footer/footer.scss';
+@import '../components/pageElements/Loading/loading.scss';
 
 * {
   box-sizing: border-box;
