@@ -15,5 +15,8 @@
         "less",
         "postcss",
         "scss"
-    ]
+    ],
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    }
 }

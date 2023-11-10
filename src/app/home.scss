@@ -16,73 +16,51 @@ div.outter-latest {
         padding: 0 0.625rem;
     }
 
-    .latest {
+    h1.latest-title {
+        color: $dark-gray-1;
+    }
+
+    .no-posts {
+        margin: auto;
         display: flex;
-        flex-flow: column;
-        gap: 1.5625rem;
+        flex-flow: row wrap;
+        place-content: center center;
+        align-items: center;
+        gap: 1.3125rem;
+        min-height: 16rem;
 
         @include mobile {
-            gap: 0.625rem;
+            min-height: 21.875rem;
         }
 
-        h1.latest-title {
-            color: $dark-gray-1;
+        @include mobile {
+            flex-flow: column-reverse;
         }
 
-        .posts {
-            display: flex;
-            flex-flow: row wrap;
-            place-content: center center;
-            align-items: center;
-            gap: 1.5rem;
-            align-self: stretch;
+        .maintenance-icon {
+            width: 12.5rem;
+            height: 12.5rem;
 
-            &:has(.no-posts) {
-                min-height: 16rem;
-
-                @include mobile {
-                    min-height: 21.875rem;
-                }
+            @include mobile {
+                width: 10.75rem;
+                height: 10.75rem;
             }
-            
-            .no-posts {
-                margin: auto;
-                display: flex;
-                flex-flow: row wrap;
-                place-content: center center;
-                align-items: center;
-                gap: 1.3125rem;
+        }
 
-                @include mobile {
-                    flex-flow: column-reverse;
-                }
+        .text-frame {
+            display: flex;
+            flex-flow: column;
+            gap: 0.625rem;
+            height: max-content;
 
-                .maintenance-icon {
-                    width: 12.5rem;
-                    height: 12.5rem;
+            .title {
+                color: $dark-gray-1;
+                text-align: justify;
+            }
 
-                    @include mobile {
-                        width: 10.75rem;
-                        height: 10.75rem;
-                    }
-                }
-
-                .text-frame {
-                    display: flex;
-                    flex-flow: column;
-                    gap: 0.625rem;
-                    height: max-content;
-
-                    .title {
-                        color: $dark-gray-1;
-                        text-align: justify;
-                    }
-
-                    .subtitle {
-                        color: $dark-gray-1;
-                        text-align: justify;
-                    }
-                }
+            .subtitle {
+                color: $dark-gray-1;
+                text-align: justify;
             }
         }
     }

@@ -6,7 +6,6 @@ div.banner {
     background: $dark-gray-1;
     background-size: cover;
     box-shadow: 0 4px 4px 0 rgba($black, 0.25);
-    min-height: 27.5rem;
 
     @include desktop {
         padding: 1.25rem 1.5rem;
@@ -18,7 +17,6 @@ div.banner {
 
     @include mobile {
         padding: 1.25rem 0.625rem;
-        min-height: 16rem;
     }
 
     .banner-layout {
@@ -27,6 +25,11 @@ div.banner {
         align-items: center;
         flex-flow: column;
         gap: 0.625rem;
+        min-height: 27.5rem;
+
+        @include mobile {
+            min-height: 16rem;
+        }
 
         .title {
             color: $white;
