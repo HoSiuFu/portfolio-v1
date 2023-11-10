@@ -20,10 +20,37 @@ const meta: PostCardMeta = {
             description:
                 'Defines the path/url to navigate to when the button in the Post Card is clicked.',
         },
+        gridColumnDesktop: {
+            description:
+                'Defines the start and end column of the Post Card element, for grid positioning purposes.' +
+                'This one will applied to the desktop variants.',
+        },
+        gridColumnTablet: {
+            description:
+                'Defines the start and end column of the Post Card element, for grid positioning purposes.' +
+                'This one will applied to the tablet variants.',
+        },
+        gridColumnMobile: {
+            description:
+                'Defines the start and end column of the Post Card element, for grid positioning purposes.' +
+                'This one will applied to the mobile variants.',
+        },
     },
     args: {
         title: 'Title',
         postUrl: '#',
+        gridColumnDesktop: {
+            start: 1,
+            end: 3,
+        },
+        gridColumnTablet: {
+            start: 1,
+            end: 2,
+        },
+        gridColumnMobile: {
+            start: 1,
+            end: 4,
+        },
     },
 }
 

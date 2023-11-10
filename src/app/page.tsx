@@ -1,7 +1,8 @@
 import React from 'react'
 import { MaintenanceIcon } from '@/components/icons'
 import { getLatestProjects } from '@/actions/outstatic'
-import { Banner, PostCard } from '@/components/pageElements'
+import { Banner } from '@/components/pageElements'
+import Posts from '../components/pageElements/Posts/Posts'
 
 const Home = async () => {
     const latestWorks = await getLatestProjects()
@@ -26,36 +27,26 @@ const Home = async () => {
             />
             <div className='outter-latest'>
                 <div className='layout'>
-                    <div className='grid-desktop-start-1 grid-desktop-end-13 grid-tablet-start-1 grid-tablet-end-7 grid-mobile-start-1 grid-mobile-end-5 latest'>
-                        <h1 className='h1 latest-title'>Latest Work</h1>
-                        <div className='posts'>
-                            {latestWorks?.length !== 0 ? (
-                                latestWorks.map((work) => (
-                                    <PostCard
-                                        title={work.title}
-                                        postUrl={work.slug}
-                                        cover={work.coverImage}
-                                        description={work.description}
-                                        key={work.slug}
-                                    />
-                                ))
-                            ) : (
-                                <div className='no-posts'>
-                                    <MaintenanceIcon className='maintenance-icon' />
-                                    <div className='text-frame'>
-                                        <h2 className='h2 title'>
-                                            Whoops! <br />
-                                            Seems like there are no posts yet!
-                                        </h2>
-                                        <h3 className='h3 subtitle'>
-                                            Don&apos;t worry this will be
-                                            populated soon.
-                                        </h3>
-                                    </div>
-                                </div>
-                            )}
+                    <h1 className='grid-desktop-start-1 grid-desktop-end-13 grid-tablet-start-1 grid-tablet-end-7 grid-mobile-start-1 grid-mobile-end-5 h1 latest-title'>
+                        Latest Work
+                    </h1>
+                    {latestWorks?.length !== 0 ? (
+                        <Posts posts={latestWorks} />
+                    ) : (
+                        <div className='grid-desktop-start-1 grid-desktop-end-13 grid-tablet-start-1 grid-tablet-end-7 grid-mobile-start-1 grid-mobile-end-5 no-posts'>
+                            <MaintenanceIcon className='maintenance-icon' />
+                            <div className='text-frame'>
+                                <h2 className='h2 title'>
+                                    Whoops! <br />
+                                    Seems like there are no posts yet!
+                                </h2>
+                                <h3 className='h3 subtitle'>
+                                    Don&apos;t worry this will be populated
+                                    soon.
+                                </h3>
+                            </div>
                         </div>
-                    </div>
+                    )}
                 </div>
             </div>
         </>
