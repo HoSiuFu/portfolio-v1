@@ -6,6 +6,7 @@ describe('<Tag />', () => {
     it('Renders', () => {
         cy.mount(
             <Tag
+                id='test'
                 onClick={() => {
                     console.log('here')
                 }}

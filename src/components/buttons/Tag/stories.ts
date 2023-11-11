@@ -5,6 +5,9 @@ const meta: TagMeta = {
     title: 'Atoms/Buttons/Tag',
     component: Tag,
     argTypes: {
+        id: {
+            description: 'Defines the id of the button',
+        },
         children: {
             description: 'Defines the content inside of the tag',
         },
@@ -21,6 +24,7 @@ const meta: TagMeta = {
         },
     },
     args: {
+        id: 'label',
         children: 'Label',
         onClick: () => {},
     },

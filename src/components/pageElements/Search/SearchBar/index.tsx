@@ -26,8 +26,17 @@ const SearchBar = (props: SearchBarProps) => {
         props.onClearValue()
     }
 
+    const onClickContainer = () => {
+        if (input && input.current) {
+            input.current.focus()
+        }
+
+        props.onClick && props.onClick()
+    }
+
     return (
         <div
+            onClick={onClickContainer}
             className={`grid-desktop-start-${
                 props.gridColumnDesktop.start
             } grid-desktop-end-${
@@ -46,6 +55,7 @@ const SearchBar = (props: SearchBarProps) => {
                 </label>
                 <input
                     ref={input}
+                    onClick={props.onClick}
                     id={props.id}
                     className='p search-input'
                     onChange={onChange}

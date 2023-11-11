@@ -31,6 +31,10 @@ const meta: SearchBarMeta = {
                 'Defines the start and end column of the SearchBar element, for grid positioning purposes.' +
                 'This one will applied to the mobile variants.',
         },
+        onClick: {
+            description:
+                'Defines the function that is executed when the user clicks on the input',
+        },
         fullWidth: {
             description:
                 'Defines with the SearchBar is suppose to expand to the whole available space.',

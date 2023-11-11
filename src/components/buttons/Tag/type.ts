@@ -5,6 +5,7 @@ export default interface TagProps {
     onClick: (e?: React.MouseEvent<HTMLElement>) => void
     isSelected?: boolean
     disabled?: boolean
+    id: string
 }
 
 export type TagMeta = Meta<TagProps>

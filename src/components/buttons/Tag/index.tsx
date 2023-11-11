@@ -8,6 +8,7 @@ const Tag = (props: TagProps) => {
             onClick={props.onClick}
             className={`p tag ${props.isSelected ? 'selected' : ''}`}
             disabled={props.disabled}
+            id={props.id}
         >
             <TagIcon className='tag-icon' />
             {props.children}
