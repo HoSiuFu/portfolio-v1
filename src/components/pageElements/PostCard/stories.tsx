@@ -49,7 +49,7 @@ const meta: PostCardMeta = {
         },
         gridColumnMobile: {
             start: 1,
-            end: 4,
+            end: 5,
         },
     },
 }

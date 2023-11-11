@@ -1,9 +1,9 @@
 import React from 'react'
 import '@/styles/global.scss'
-import SearchBar from '.'
+import Tag from '.'
 
-describe('<SearchBar />', () => {
+describe('<Tag />', () => {
     it('Renders', () => {
-        cy.mount(<SearchBar />)
+        cy.mount(<Tag />)
     })
 })
