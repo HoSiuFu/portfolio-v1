@@ -4,6 +4,14 @@ import Tag from '.'
 
 describe('<Tag />', () => {
     it('Renders', () => {
-        cy.mount(<Tag />)
+        cy.mount(
+            <Tag
+                onClick={() => {
+                    console.log('here')
+                }}
+            >
+                Test
+            </Tag>
+        )
     })
 })
