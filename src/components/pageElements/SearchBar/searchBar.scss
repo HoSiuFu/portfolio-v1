@@ -1,0 +1,56 @@
+div.search-tags-outer-container {
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+
+    .search-bar {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+        flex-flow: row;
+        border-radius: 0.25rem;
+        background-color: $white;
+        box-shadow: 0 4px 4px 0 rgb($black, 0.25);
+        padding: 0.625rem;
+
+        .right-side {
+            display: flex;
+            align-items: center;
+            gap: 0.625rem;
+            width: 100%;
+
+            .search-icon-label {
+                display: flex;
+
+                .search-icon {
+                    fill: $dark-gray-1;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+            }
+            
+
+            .search-input {
+                all: unset;
+                cursor: pointer;
+                width: 100%;
+                margin-right: 2rem;
+            }
+        }
+
+        .icon-absolute {
+            position: absolute;
+            right: 0;
+
+            .close-icon {
+                fill: $dark-gray-1;
+                width: 1rem;
+                height: 1rem;
+            }
+        }
+    }
+}
