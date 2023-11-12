@@ -25,6 +25,10 @@ const meta: IconButtonMeta = {
             description:
                 'Specifies where the linked document should open.\nShould not be used in conjuction with the onClick property.',
         },
+        disabled: {
+            description:
+                'Specifies if a IconButton is disabled. This only affects the button variant of the component.',
+        },
     },
     args: {
         children: <GitHubIcon />,
@@ -36,6 +40,12 @@ export default meta
 export const Button: IconButtonStory = {
     args: {
         onClick: () => {},
+    },
+}
+
+export const DisabledButton: IconButtonStory = {
+    args: {
+        disabled: true,
     },
 }
 

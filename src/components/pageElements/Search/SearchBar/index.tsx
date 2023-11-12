@@ -60,6 +60,7 @@ const SearchBar = (props: SearchBarProps) => {
                     className='p search-input'
                     onChange={onChange}
                     placeholder='Type here to search terms...'
+                    autoComplete='off'
                 />
             </div>
             {showCloseIcon && (

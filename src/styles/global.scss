@@ -20,9 +20,11 @@
 @import '../components/pageElements/PostCard/postCard';
 @import '../components/Footer/footer';
 @import '../components/pageElements/Loading/loading';
+@import '../components/buttons/Tag/tag';
 @import '../components/pageElements/Search/search';
 @import '../components/pageElements/Search/SearchBar/searchBar';
-@import '../components/buttons/Tag/tag';
+@import '../components/pageElements/Pagination/PaginationElement/paginationElement';
+@import '../components/pageElements/Pagination/pagination';
 
 * {
   box-sizing: border-box;

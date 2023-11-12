@@ -6,6 +6,7 @@ import BrandIcon from './BrandIcon'
 import MaintenanceIcon from './MaintenanceIcon'
 import SearchIcon from './SearchIcon'
 import TagIcon from './TagIcon'
+import ArrowIcon from './ArrowIcon'
 
 export {
     GitHubIcon,
@@ -16,4 +17,5 @@ export {
     MaintenanceIcon,
     SearchIcon,
     TagIcon,
+    ArrowIcon,
 }

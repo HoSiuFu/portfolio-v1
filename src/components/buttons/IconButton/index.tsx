@@ -7,7 +7,11 @@ const IconButton = (props: IconButtonProps) => {
             {props.children}
         </a>
     ) : (
-        <button className='icon-button' onClick={props.onClick}>
+        <button
+            disabled={props.disabled}
+            className='icon-button'
+            onClick={props.onClick}
+        >
             {props.children}
         </button>
     )
