@@ -21,3 +21,25 @@ export const getLatestProjects = async () => {
 
     return posts || []
 }
+
+export const getAllProjects = async () => {
+    'use server'
+
+    const db = await load().catch((error) => {
+        console.log(error)
+    })
+
+    const posts = await db
+        ?.find(
+            {
+                collection: 'projects',
+            },
+            ['coverImage', 'title', 'description', 'slug']
+        )
+        .sort({
+            publishedAt: -1,
+        })
+        .toArray()
+
+    return posts || []
+}
