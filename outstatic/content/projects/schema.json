@@ -1,0 +1,26 @@
+{
+  "title": "projects",
+  "type": "object",
+  "properties": {
+    "tags": {
+      "required": true,
+      "description": "Tags for filtering purposes",
+      "fieldType": "Tags",
+      "dataType": "array",
+      "title": "tags",
+      "values": [
+        {
+          "value": "test",
+          "label": "Test"
+        }
+      ]
+    },
+    "iframes": {
+      "required": false,
+      "description": "Sources and titles for the Iframe Containers. It is an array of object {src, title}",
+      "fieldType": "Text",
+      "dataType": "string",
+      "title": "iframes"
+    }
+  }
+}
