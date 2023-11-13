@@ -4,6 +4,7 @@ import { PostCard } from '@/components/pageElements'
 import { returnStartandEndPosition } from '@/helpers/postCardPlacement.helper'
 import React, { useEffect, useState } from 'react'
 import { OutstaticSchema } from './type'
+import useWindowResize from '@/hooks/useWindowResize'
 
 const Posts = (props: { posts: Array<OutstaticSchema> }) => {
     const [isClient, setIsClient] = useState(false)
@@ -11,6 +12,8 @@ const Posts = (props: { posts: Array<OutstaticSchema> }) => {
     useEffect(() => {
         setIsClient(true)
     }, [])
+
+    const [width] = useWindowResize()
 
     if (isClient)
         return (
@@ -29,7 +32,7 @@ const Posts = (props: { posts: Array<OutstaticSchema> }) => {
                         gridColumnTablet={returnStartandEndPosition(
                             index,
                             'tablet',
-                            window.innerWidth
+                            width
                         )}
                         gridColumnMobile={returnStartandEndPosition(
                             index,
