@@ -1,25 +1,7 @@
 {
-  "commit": "8491b0bf3923a5d42f9c528bd7a02f7b995e0676",
-  "generated": "2023-11-13T17:47:03.862Z",
+  "commit": "d66b3dd56fe93b49b4a18d5fe20bee8732a36897",
+  "generated": "2023-11-13T17:47:09.817Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "9529b2276dce4712d949f86233fa0f03c484eb62",
-        "hash": "122722332",
-        "path": "outstatic/content/projects/test.md"
-      },
-      "author": {
-        "name": "Danilo Andrade",
-        "picture": "https://avatars.githubusercontent.com/u/35849416?v=4"
-      },
-      "collection": "projects",
-      "coverImage": "/images/67a445c9342d050c4241ef27494d72b8-I4OD.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat eu nisl ac ornare. Suspendisse enim mi, facilisis eu scelerisque placerat, sagittis sed erat. Donec in elit malesuada, egestas ante a, pulvinar orci. Aliquam et tortor ut mauris aliquet pharetra nec ac elit. Ut imperdiet molestie ante a porttitor. Pellentesque vitae convallis velit. Vivamus eget semper ex. Mauris feugiat libero dolor, ut laoreet sem volutpat nec. Proin consequat ligula in libero ullamcorper condimentum. Pellentesque sollicitudin sem nisl, eu consectetur nunc pellentesque ut. Proin suscipit sed mi quis suscipit.\nPellentesque blandit augue a sodales tincidunt. Praesent dictum sollicitudin maximus. Etiam sed turpis ac tellus tincidunt egestas non eu urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;",
-      "publishedAt": "2023-11-13T17:40:51.895Z",
-      "slug": "test",
-      "status": "published",
-      "title": "Test"
-    },
     {
       "__outstatic": {
         "commit": "8491b0bf3923a5d42f9c528bd7a02f7b995e0676",
@@ -43,6 +25,30 @@
         }
       ],
       "title": "Test1"
+    },
+    {
+      "__outstatic": {
+        "commit": "d66b3dd56fe93b49b4a18d5fe20bee8732a36897",
+        "hash": "3723216235",
+        "path": "outstatic/content/projects/test.md"
+      },
+      "author": {
+        "name": "Danilo Andrade",
+        "picture": "https://avatars.githubusercontent.com/u/35849416?v=4"
+      },
+      "collection": "projects",
+      "coverImage": "/images/67a445c9342d050c4241ef27494d72b8-I4OD.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat eu nisl ac ornare. Suspendisse enim mi, facilisis eu scelerisque placerat, sagittis sed erat. Donec in elit malesuada, egestas ante a, pulvinar orci. Aliquam et tortor ut mauris aliquet pharetra nec ac elit. Ut imperdiet molestie ante a porttitor. Pellentesque vitae convallis velit. Vivamus eget semper ex. Mauris feugiat libero dolor, ut laoreet sem volutpat nec. Proin consequat ligula in libero ullamcorper condimentum. Pellentesque sollicitudin sem nisl, eu consectetur nunc pellentesque ut. Proin suscipit sed mi quis suscipit. Pellentesque blandit augue a sodales tincidunt. Praesent dictum sollicitudin maximus. Etiam sed turpis ac tellus tincidunt egestas non eu urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;",
+      "publishedAt": "2023-11-13T17:40:51.895Z",
+      "slug": "test",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Test",
+          "value": "test"
+        }
+      ],
+      "title": "Test"
     }
   ]
 }
