@@ -4,6 +4,9 @@ import HamburgerIcon from './HamburgerIcon'
 import CloseIcon from './CloseIcon'
 import BrandIcon from './BrandIcon'
 import MaintenanceIcon from './MaintenanceIcon'
+import SearchIcon from './SearchIcon'
+import TagIcon from './TagIcon'
+import ArrowIcon from './ArrowIcon'
 
 export {
     GitHubIcon,
@@ -12,4 +15,7 @@ export {
     CloseIcon,
     BrandIcon,
     MaintenanceIcon,
+    SearchIcon,
+    TagIcon,
+    ArrowIcon,
 }

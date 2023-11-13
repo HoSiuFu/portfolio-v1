@@ -1,0 +1,42 @@
+button.pagination-item {
+    all: unset;
+    position: relative;
+    overflow: hidden;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    line-height: 0;
+    vertical-align: middle;
+    color: $dark-gray-1;
+    min-width: 1.25rem;
+    height: 1.25rem;
+    padding: 0.3125rem;
+
+    &.active {
+        cursor: default;
+        color: $red-2;
+        outline: 0.0625rem solid $red-2;
+        box-shadow: 0 0.125rem 0.125rem 0 rgba($black, 0.25);
+    }
+
+    &:not(.active) {
+        @include central-ripple-effect;
+
+        &::after {
+            border-radius: 100%;
+            background: rgba($white, 0.75);
+        }
+
+        &:active {
+            background: rgba($black, 0.1);
+            box-shadow: 0 0.125rem 0.125rem 0 rgba($black, 0.25);
+            outline: 0.0625rem solid $gray-0;
+        }
+
+        &:hover {
+            background: rgba($black, 0.1);
+        }
+    }
+}
