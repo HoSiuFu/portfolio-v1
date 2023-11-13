@@ -1,0 +1,14 @@
+{
+  "title": "projects",
+  "type": "object",
+  "properties": {
+    "tags": {
+      "required": true,
+      "description": "Tags for filtering purposes",
+      "fieldType": "Tags",
+      "dataType": "array",
+      "title": "tags",
+      "values": []
+    }
+  }
+}
