@@ -1,6 +1,6 @@
 {
   "commit": "ed6813f0739aec348b48ed451bac8fdae4484e0d",
-  "generated": "2023-11-13T17:43:22.595Z",
+  "generated": "2023-11-13T17:43:25.086Z",
   "metadata": [
     {
       "__outstatic": {
@@ -40,20 +40,20 @@
     },
     {
       "__outstatic": {
-        "commit": "4594be8e2ef1759b132b193c48441b89083a1d8d",
-        "hash": "3191745811",
-        "path": "outstatic/content/projects/couple-pizza.md"
+        "commit": "a8b9611ca9940a076ae0a66dbaa954e96a7327e7",
+        "hash": "4198096727",
+        "path": "outstatic/content/projects/bearbnb.md"
       },
       "author": {
-        "name": "Bob Marley"
+        "name": "Andre Vitorio"
       },
       "collection": "projects",
       "coverImage": "/images/front.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-      "publishedAt": "2022-03-16T05:35:07.322Z",
-      "slug": "couple-pizza",
+      "description": "Amazing rental locations for your teddy bear.",
+      "publishedAt": "2022-03-17T05:35:07.322Z",
+      "slug": "bearbnb",
       "status": "published",
-      "title": "Couple Pizza"
+      "title": " 🧸 Bearbnb"
     }
   ]
 }
