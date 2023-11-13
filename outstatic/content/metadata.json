@@ -1,6 +1,6 @@
 {
-  "commit": "47984b010f3d6ab1ed79dc027845a1c788f3b3a0",
-  "generated": "2023-11-13T17:45:25.107Z",
+  "commit": "8491b0bf3923a5d42f9c528bd7a02f7b995e0676",
+  "generated": "2023-11-13T17:47:03.862Z",
   "metadata": [
     {
       "__outstatic": {
@@ -22,8 +22,8 @@
     },
     {
       "__outstatic": {
-        "commit": "47984b010f3d6ab1ed79dc027845a1c788f3b3a0",
-        "hash": "2976145735",
+        "commit": "8491b0bf3923a5d42f9c528bd7a02f7b995e0676",
+        "hash": "3103174268",
         "path": "outstatic/content/projects/test1.md"
       },
       "author": {
@@ -36,6 +36,12 @@
       "publishedAt": "2023-11-13T17:44:17.276Z",
       "slug": "test1",
       "status": "published",
+      "tags": [
+        {
+          "label": "Test",
+          "value": "test"
+        }
+      ],
       "title": "Test1"
     }
   ]
