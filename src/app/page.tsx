@@ -1,6 +1,6 @@
 import React from 'react'
 import { MaintenanceIcon } from '@/components/icons'
-import { getLatestProjects } from '@/actions/outstatic'
+import { getLatestProjects } from '@/api/outstatic'
 import { Banner } from '@/components/pageElements'
 import Posts from '../components/pageElements/Posts/Posts'
 

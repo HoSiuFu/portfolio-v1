@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useRef, useState } from 'react'
 import SearchBarProps from './type'
 import { CloseIcon, SearchIcon } from '@/components/icons'

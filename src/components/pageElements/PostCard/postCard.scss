@@ -5,12 +5,12 @@ div.post-card {
     flex-flow: column;
     gap: 0.625rem;
     align-self: stretch;
-    min-width: max-content;
     border-radius: 0.5rem;
     background: $white;
     box-shadow: 0 2px 4px 0 rgba($black, 0.25);
 
     .cover {
+        position: relative;
         width: 100%;
         align-self: stretch;
         height: 9.375rem;
@@ -19,11 +19,27 @@ div.post-card {
     }
 
     .title {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        width: 100%;
         color: $dark-gray-1;
+        text-align: justify;
     }
 
-    .text {
+    .description {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 5;
+        overflow: hidden;
+        width: 100%;
         color: $dark-gray-1;
+        text-align: justify;
+    }
+
+    .button-div {
+        margin-top: auto;
     }
 
     @include desktop {
