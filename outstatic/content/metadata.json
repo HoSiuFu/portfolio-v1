@@ -1,6 +1,6 @@
 {
-  "commit": "2c9e862513d80d9f24804e76f6547dd266c1a7fe",
-  "generated": "2023-11-13T17:45:13.551Z",
+  "commit": "47984b010f3d6ab1ed79dc027845a1c788f3b3a0",
+  "generated": "2023-11-13T17:45:25.107Z",
   "metadata": [
     {
       "__outstatic": {
@@ -22,8 +22,8 @@
     },
     {
       "__outstatic": {
-        "commit": "2c9e862513d80d9f24804e76f6547dd266c1a7fe",
-        "hash": "3595588102",
+        "commit": "47984b010f3d6ab1ed79dc027845a1c788f3b3a0",
+        "hash": "2976145735",
         "path": "outstatic/content/projects/test1.md"
       },
       "author": {
@@ -32,10 +32,10 @@
       },
       "collection": "projects",
       "coverImage": "/images/fcc26c72d326c15deb2429107d2c3903-Q5Nz.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat eu nisl ac ornare. Suspendisse enim mi, facilisis eu scelerisque placerat, sagittis sed erat. Donec in elit malesuada, egestas ante a, pulvinar orci. Aliquam et tortor ut mauris aliquet pharetra nec ac elit. Ut imperdiet molestie ante a porttitor. Pellentesque vitae convallis velit. Vivamus eget semper ex. Mauris feugiat libero dolor, ut laoreet sem volutpat nec. Proin consequat ligula in libero ullamcorper condimentum. Pellentesque sollicitudin sem nisl, eu consectetur nunc pellentesque ut. Proin suscipit sed mi quis suscipit.\nPellentesque blandit augue a sodales tincidunt. Praesent dictum sollicitudin maximus. Etiam sed turpis ac tellus tincidunt egestas non eu urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat eu nisl ac ornare. Suspendisse enim mi, facilisis eu scelerisque placerat, sagittis sed erat. Donec in elit malesuada, egestas ante a, pulvinar orci. Aliquam et tortor ut mauris aliquet pharetra nec ac elit. Ut imperdiet molestie ante a porttitor. Pellentesque vitae convallis velit. Vivamus eget semper ex. Mauris feugiat libero dolor, ut laoreet sem volutpat nec. Proin consequat ligula in libero ullamcorper condimentum. Pellentesque sollicitudin sem nisl, eu consectetur nunc pellentesque ut. Proin suscipit sed mi quis suscipit. Pellentesque blandit augue a sodales tincidunt. Praesent dictum sollicitudin maximus. Etiam sed turpis ac tellus tincidunt egestas non eu urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;",
       "publishedAt": "2023-11-13T17:44:17.276Z",
       "slug": "test1",
-      "status": "draft",
+      "status": "published",
       "title": "Test1"
     }
   ]
