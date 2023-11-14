@@ -5428,6 +5428,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/stopword@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "@types/stopword@npm:2.0.3"
+  checksum: 6635737f7b45a0985b85e50b0604c81371783d643e2444719f34abb94336b4e522a382ce8da1107bf79ef5e9f6091a7771428deb9616eff8196c6fcd4c4a4f50
+  languageName: node
+  linkType: hard
+
 "@types/throttle-debounce@npm:^2.1.0":
   version: 2.1.0
   resolution: "@types/throttle-debounce@npm:2.1.0"
@@ -6480,6 +6487,17 @@ __metadata:
   version: 4.8.2
   resolution: "axe-core@npm:4.8.2"
   checksum: 8c19f507dabfcb8514e4280c7fc66e85143be303ddb57ec9f119338021228dc9b80560993938003837bda415fde7c07bba3a96560008ffa5f4145a248ed8f5fe
+  languageName: node
+  linkType: hard
+
+"axios@npm:^1.6.1":
+  version: 1.6.1
+  resolution: "axios@npm:1.6.1"
+  dependencies:
+    follow-redirects: ^1.15.0
+    form-data: ^4.0.0
+    proxy-from-env: ^1.1.0
+  checksum: 573f03f59b7487d54551b16f5e155d1d130ad4864ed32d1da93d522b78a57123b34e3bde37f822a65ee297e79f1db840f9ad6514addff50d3cbf5caeed39e8dc
   languageName: node
   linkType: hard
 
@@ -9610,6 +9628,16 @@ __metadata:
   version: 0.219.3
   resolution: "flow-parser@npm:0.219.3"
   checksum: 343a50a3dd0167e6cf075bf264ae0a2be5339b816af17621e79fb39ea101e0205792b717c3808ded4a4032add62e67c5b7368b6e2c432cfad8339a81a4f5ecc7
+  languageName: node
+  linkType: hard
+
+"follow-redirects@npm:^1.15.0":
+  version: 1.15.3
+  resolution: "follow-redirects@npm:1.15.3"
+  peerDependenciesMeta:
+    debug:
+      optional: true
+  checksum: 584da22ec5420c837bd096559ebfb8fe69d82512d5585004e36a3b4a6ef6d5905780e0c74508c7b72f907d1fa2b7bd339e613859e9c304d0dc96af2027fd0231
   languageName: node
   linkType: hard
 
@@ -13586,8 +13614,10 @@ __metadata:
     "@types/node": ^20
     "@types/react": ^18
     "@types/react-dom": ^18
+    "@types/stopword": ^2.0.3
     "@typescript-eslint/eslint-plugin": ^6.8.0
     "@typescript-eslint/parser": ^6.8.0
+    axios: ^1.6.1
     cypress: ^13.3.2
     eslint: ^8
     eslint-config-next: 13.5.6
@@ -13605,6 +13635,7 @@ __metadata:
     react: ^18
     react-dom: ^18
     sass: ^1.69.4
+    stopword: ^2.0.8
     storybook: ^7.5.1
     stylelint: ^15.11.0
     stylelint-config-prettier-scss: ^1.0.0
@@ -14070,7 +14101,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"proxy-from-env@npm:^1.0.0":
+"proxy-from-env@npm:^1.0.0, proxy-from-env@npm:^1.1.0":
   version: 1.1.0
   resolution: "proxy-from-env@npm:1.1.0"
   checksum: ed7fcc2ba0a33404958e34d95d18638249a68c430e30fcb6c478497d72739ba64ce9810a24f53a7d921d0c065e5b78e3822759800698167256b04659366ca4d4
@@ -15615,6 +15646,13 @@ __metadata:
   dependencies:
     internal-slot: ^1.0.4
   checksum: d04173690b2efa40e24ab70e5e51a3ff31d56d699550cfad084104ab3381390daccb36652b25755e420245f3b0737de66c1879eaa2a8d4fc0a78f9bf892fcb42
+  languageName: node
+  linkType: hard
+
+"stopword@npm:^2.0.8":
+  version: 2.0.8
+  resolution: "stopword@npm:2.0.8"
+  checksum: 1b92d9b317a9b74b6fd92681a9767478c8f8fd856b869f8705afdcf1fd7e28f88062c97a4432c8d9b7a1e9d5491f24405c4815da6fdca887b58b20f8629472ef
   languageName: node
   linkType: hard
 

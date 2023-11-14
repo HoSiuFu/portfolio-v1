@@ -18,7 +18,7 @@ const Pagination = (props: PaginationProps) => {
     }
 
     const onClickPrevious = () => {
-        props.onPageChange(props.currentPage + 1)
+        props.onPageChange(props.currentPage - 1)
     }
 
     const onClickPageElement = (
@@ -38,7 +38,7 @@ const Pagination = (props: PaginationProps) => {
         <div className='pagination'>
             <IconButton
                 disabled={props.currentPage === 1}
-                onClick={onClickNext}
+                onClick={onClickPrevious}
             >
                 <ArrowIcon className='arrow left' />
             </IconButton>
@@ -63,7 +63,7 @@ const Pagination = (props: PaginationProps) => {
                     props.currentPage ===
                     Math.ceil(props.totalCount / props.pageSize)
                 }
-                onClick={onClickPrevious}
+                onClick={onClickNext}
             >
                 <ArrowIcon className='arrow' />
             </IconButton>
