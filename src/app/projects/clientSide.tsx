@@ -78,23 +78,25 @@ const ClientSideProjects = (props: Props) => {
 
     return (
         <>
-            <div className='loading-div grid-desktop-start-1 grid-desktop-end-13 grid-tablet-start-1 grid-tablet-end-7 grid-mobile-start-1 grid-mobile-end-5'>
+            <div className='grid-desktop-start-1 grid-desktop-end-13 grid-tablet-start-1 grid-tablet-end-7 grid-mobile-start-1 grid-mobile-end-5'>
                 <Search allTags={props.tags} onClose={onClose} />
             </div>
             {loading ? (
-                <div className='loading-div grid-desktop-start-1 grid-desktop-end-13 grid-tablet-start-1 grid-tablet-end-7 grid-mobile-start-1 grid-mobile-end-5'>
+                <div className='grid-desktop-start-1 grid-desktop-end-13 grid-tablet-start-1 grid-tablet-end-7 grid-mobile-start-1 grid-mobile-end-5'>
                     <Loading screenFit='full-width' />
                 </div>
             ) : (
                 <Posts posts={currentDisplayedPosts} />
             )}
-            <Pagination
-                currentPage={pagination.currentPage}
-                neighboursCount={pagination.neighboursCount}
-                pageSize={PAGE_SIZE}
-                totalCount={props.allProjects.length}
-                onPageChange={onPageChange}
-            />
+            <div className='pagination-div grid-desktop-start-1 grid-desktop-end-13 grid-tablet-start-1 grid-tablet-end-7 grid-mobile-start-1 grid-mobile-end-5'>
+                <Pagination
+                    currentPage={pagination.currentPage}
+                    neighboursCount={pagination.neighboursCount}
+                    pageSize={PAGE_SIZE}
+                    totalCount={filteredProjects.length}
+                    onPageChange={onPageChange}
+                />
+            </div>
         </>
     )
 }

@@ -20,7 +20,10 @@ const checkSearchTerms = (
             obj.title.toLowerCase().includes(term)
         )
         const checkDescription = searchTerms.some((term) => {
-            if (obj.description) obj.description.toLowerCase().includes(term)
+            if (obj.description)
+                return obj.description
+                    .toLowerCase()
+                    .includes(term.toLowerCase())
 
             return false
         })
