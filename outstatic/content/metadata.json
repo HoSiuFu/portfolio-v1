@@ -47,6 +47,10 @@
         {
           "label": "Test",
           "value": "test"
+        },
+        {
+          "value": "test1",
+          "label": "Test1"
         }
       ],
       "title": "Test1"

@@ -3,6 +3,7 @@
 import { Loading, Pagination, Posts, Search } from '@/components/pageElements'
 import { OutstaticSchema } from '@/components/pageElements/Posts/type'
 import { TagObject } from '@/components/pageElements/Search/type'
+import axios from 'axios'
 import React, { useEffect, useMemo, useState } from 'react'
 
 type Props = {
@@ -38,10 +39,32 @@ const ClientSideProjects = (props: Props) => {
         setFilteredProjects(props.allProjects)
     }, [props.allProjects])
 
-    const onClose = (searchTerm: string, tags: Array<string>) => {
+    const onClose = (searchString: string, tags: Array<string>) => {
         setLoading(true)
-        console.log(searchTerm, tags)
-        setLoading(false)
+        if (searchString.length !== 0 || tags.length !== 0)
+            axios
+                .get('api/projects', {
+                    params: {
+                        searchString,
+                        tags,
+                    },
+                })
+                .then((response) => {
+                    if (response.status === 200) {
+                        setFilteredProjects(response.data)
+                    }
+
+                    setLoading(false)
+                })
+                .catch((error) => {
+                    console.log(error)
+
+                    setLoading(false)
+                })
+        else {
+            setFilteredProjects(props.allProjects)
+            setLoading(false)
+        }
     }
 
     const onPageChange = (page: number) => {
@@ -53,19 +76,18 @@ const ClientSideProjects = (props: Props) => {
         setLoading(false)
     }
 
-    if (loading)
-        return (
-            <div className='loading-div grid-desktop-start-1 grid-desktop-end-13 grid-tablet-start-1 grid-tablet-end-7 grid-mobile-start-1 grid-mobile-end-5'>
-                <Loading screenFit='full-width' />
-            </div>
-        )
-
     return (
         <>
             <div className='loading-div grid-desktop-start-1 grid-desktop-end-13 grid-tablet-start-1 grid-tablet-end-7 grid-mobile-start-1 grid-mobile-end-5'>
                 <Search allTags={props.tags} onClose={onClose} />
             </div>
-            <Posts posts={currentDisplayedPosts} />
+            {loading ? (
+                <div className='loading-div grid-desktop-start-1 grid-desktop-end-13 grid-tablet-start-1 grid-tablet-end-7 grid-mobile-start-1 grid-mobile-end-5'>
+                    <Loading screenFit='full-width' />
+                </div>
+            ) : (
+                <Posts posts={currentDisplayedPosts} />
+            )}
             <Pagination
                 currentPage={pagination.currentPage}
                 neighboursCount={pagination.neighboursCount}

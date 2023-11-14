@@ -12,6 +12,10 @@
         {
           "value": "test",
           "label": "Test"
+        },
+        {
+          "value": "test1",
+          "label": "Test1"
         }
       ]
     },

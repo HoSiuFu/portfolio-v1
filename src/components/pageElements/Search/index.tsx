@@ -45,6 +45,7 @@ const Search = (props: SearchProps) => {
     const onClearTags = (event?: React.MouseEvent<HTMLElement>) => {
         event?.preventDefault()
         setSelectedTags([])
+        props.onClose(searchValue.current, [])
     }
 
     return (

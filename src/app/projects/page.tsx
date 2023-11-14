@@ -1,9 +1,9 @@
 import React from 'react'
 import { MaintenanceIcon } from '@/components/icons'
 import { OutstaticSchema } from '@/components/pageElements/Posts/type'
-import { getAllProjects, getAllTags } from '@/api/outstatic'
 import ClientSideProjects from './clientSide'
 import { TagObject } from '@/components/pageElements/Search/type'
+import { getAllProjects, getAllTags } from '../api/outstatic'
 
 const Projects = async () => {
     const allProjects: Array<OutstaticSchema> = await getAllProjects()

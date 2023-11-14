@@ -1,8 +1,8 @@
 import React from 'react'
 import { MaintenanceIcon } from '@/components/icons'
-import { getLatestProjects } from '@/api/outstatic'
 import { Banner } from '@/components/pageElements'
 import Posts from '../components/pageElements/Posts/Posts'
+import { getLatestProjects } from './api/outstatic'
 
 const Home = async () => {
     const latestWorks = await getLatestProjects()
