@@ -2,7 +2,7 @@ import Dropdown from '.'
 import { DropdownStory, DropdownMeta } from './type'
 
 const meta: DropdownMeta = {
-    title: 'Atoms/Dropdown',
+    title: 'Atoms/Page Elements/Dropdown',
     component: Dropdown,
     argTypes: {
         placeholder: {
@@ -21,6 +21,10 @@ const meta: DropdownMeta = {
             description:
                 'Defines if the dropdown is supposed to expand to the whole division',
         },
+        onSelect: {
+            description:
+                'Defines the function that is executed when an option is selected',
+        },
     },
     args: {
         placeholder: 'Select an Option...',
@@ -28,6 +32,9 @@ const meta: DropdownMeta = {
             { value: 'value1', label: 'Value 1' },
             { value: 'value2', label: 'Value 2' },
         ],
+        onSelect: (value) => {
+            console.log(value)
+        },
     },
 }
 

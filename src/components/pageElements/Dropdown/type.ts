@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react'
 
-export interface Option {
+export type Option = {
     label: string
     value: string
 }
@@ -8,7 +8,8 @@ export interface Option {
 export default interface DropdownProps {
     placeholder: string
     options: Array<Option>
-    defaultValue?: string
+    onSelect: (value: Option['value']) => void
+    defaultValue?: Option
     fullWidth?: boolean
 }
 

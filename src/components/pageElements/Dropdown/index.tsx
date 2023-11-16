@@ -1,25 +1,14 @@
 'use client'
 
-import React, { useEffect, useRef, useState } from 'react'
-import DropdownProps from './type'
+import React, { useEffect, useState } from 'react'
+import DropdownProps, { Option } from './type'
 import { ArrowIcon } from '@/components/icons'
 import useBreakpoints from '@/hooks/useBreakpoints/useBreakpoints'
 
 const Dropdown = (props: DropdownProps) => {
     const [expanded, setExpanded] = useState<boolean>(false)
-    const [activeOption, setActiveOption] = useState<string>('')
-    const [optionsHeight, setOptionsHeight] = useState<number>(0)
-    const buttonRef = useRef<HTMLButtonElement>(null)
+    const [activeOption, setActiveOption] = useState<Option>()
     const activeLayout = useBreakpoints()
-
-    useEffect(() => {
-        if (buttonRef.current) {
-            setOptionsHeight(
-                buttonRef.current.clientHeight * props.options.length
-            )
-        }
-        console.log(buttonRef.current?.clientHeight)
-    }, [props.options])
 
     useEffect(() => {
         if (props.defaultValue) setActiveOption(props.defaultValue)
@@ -27,43 +16,68 @@ const Dropdown = (props: DropdownProps) => {
 
     const onClickDropdown = () => {
         setExpanded(!expanded)
+
+        if (expanded && activeLayout !== 'desktop')
+            document.body.style.overflow = 'hidden'
+        else document.body.style.overflow = 'inherit'
     }
 
     const onClickOption = (event: React.MouseEvent<HTMLButtonElement>) => {
-        setActiveOption(event.currentTarget.value)
+        const newActiveOption = props.options.find(
+            (option) => option.value === event.currentTarget.value
+        )
+        console.log(event.currentTarget.value)
+        if (newActiveOption) {
+            setActiveOption(newActiveOption)
+            props.onSelect(event.currentTarget.value)
+        }
+
         setExpanded(false)
+        document.body.style.overflow = 'inherit'
     }
 
     return (
         <div className='dropdown-container'>
             <button
-                ref={buttonRef}
                 onClick={onClickDropdown}
-                className='p dropdown-button'
+                className={`p dropdown-button ${expanded ? 'expanded' : ''}`}
             >
-                {activeOption ? activeOption : props.placeholder}
+                {activeOption && activeOption.label
+                    ? activeOption.label
+                    : props.placeholder}
                 <ArrowIcon
                     className={`arrow-icon ${expanded ? 'rotate-upper' : ''}`}
                 />
             </button>
-            <div
-                className={`dropdown-options ${expanded ? 'expanded' : ''}`}
-                style={
-                    activeLayout === 'desktop' && expanded
-                        ? { height: `${optionsHeight}px` }
-                        : {}
-                }
-            >
-                {props.options.map((option) => (
-                    <button
-                        onClick={onClickOption}
-                        className='dropdown-option'
-                        value={option.label}
-                        key={option.value}
-                    >
-                        {option.label}
-                    </button>
-                ))}
+            <div className={`dropdown-options ${expanded ? 'expanded' : ''}`}>
+                {activeLayout === 'desktop' ? (
+                    props.options.map((option) => (
+                        <button
+                            onClick={onClickOption}
+                            className='dropdown-option'
+                            value={option.value}
+                            key={option.value}
+                        >
+                            {option.label}
+                        </button>
+                    ))
+                ) : (
+                    <div className='modal-outer-container'>
+                        <div className='modal-content'>
+                            <h3 className='h3 title'>Select an option</h3>
+                            {props.options.map((option) => (
+                                <button
+                                    onClick={onClickOption}
+                                    className='dropdown-option'
+                                    value={option.value}
+                                    key={option.value}
+                                >
+                                    {option.label}
+                                </button>
+                            ))}
+                        </div>
+                    </div>
+                )}
             </div>
         </div>
     )

@@ -1,8 +1,16 @@
 import { Meta, StoryObj } from '@storybook/react'
 
-export default interface IframeContainerProps {
+export type IframeOptionsProps = {
     src: string
     title: string
+}
+
+interface ArrayIframeOptions extends Array<IframeOptionsProps> {
+    0: IframeOptionsProps
+}
+
+export default interface IframeContainerProps {
+    iframeOptions: ArrayIframeOptions
     fullWidth?: boolean
 }
 
