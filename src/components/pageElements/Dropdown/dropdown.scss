@@ -1,0 +1,85 @@
+div.dropdown-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 17.1875rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.25rem 0.25rem 0 rgb($black, 0.25);
+    overflow: hidden;
+    
+    button.dropdown-button {
+        all: unset;
+        align-self: stretch;
+        display: flex;
+        justify-content: space-between;
+        background: $white;
+        align-items: center;
+        padding: 0.625rem;
+        color: $dark-gray-1;
+
+        &:hover {
+            background: $gray-0;
+        }
+
+        .arrow-icon {
+            width: 1rem;
+            height: 1rem;
+            fill: $dark-gray-1;
+            transform: rotate(90deg);
+            transition: transform 0.5s ease-in-out;
+
+            &.rotate-upper {
+                transform: rotate(-90deg);
+            }
+        }
+    }
+
+    .dropdown-options {
+        button.dropdown-option {
+            all: unset;
+            align-self: stretch;
+            display: flex;
+            justify-content: space-between;
+            background: $white;
+            align-items: center;
+            padding: 0.625rem;
+            color: $dark-gray-1;
+    
+            &:hover {
+                background: $red-2;
+                color: $white;
+            }
+        }
+    }
+
+    @include desktop {
+        .dropdown-options {
+            display: flex;
+            align-self: stretch;
+            flex-flow: column;
+            height: 0;
+            transition: height 0.5s ease-out;
+        }
+    }
+
+    @include apply-to-multiple-media(mobile, tablet) {
+        .dropdown-options {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            background: rgba($black, 0.25);
+
+            &.expanded {
+                display: flex;
+                flex-flow: column;
+                width: 100dvw;
+                height: 100dvh;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
