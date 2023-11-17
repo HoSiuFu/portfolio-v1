@@ -1,6 +1,6 @@
 {
-  "commit": "388bec8fc726d9e071e2523ba8dfbfc09c2f9042",
-  "generated": "2023-11-17T18:53:58.457Z",
+  "commit": "9f436ae1d6b4c4bb297508e3f951ff7d79faab3b",
+  "generated": "2023-11-17T18:55:11.711Z",
   "metadata": [
     {
       "__outstatic": {
@@ -33,8 +33,8 @@
     },
     {
       "__outstatic": {
-        "commit": "388bec8fc726d9e071e2523ba8dfbfc09c2f9042",
-        "hash": "4265540835",
+        "commit": "9f436ae1d6b4c4bb297508e3f951ff7d79faab3b",
+        "hash": "1717211759",
         "path": "outstatic/content/projects/next-to-do-list.md"
       },
       "author": {
