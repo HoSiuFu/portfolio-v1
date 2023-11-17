@@ -1,5 +1,6 @@
 import { OutstaticSchema } from '@/components/pageElements/Posts/type'
 import { TagObject } from '@/components/pageElements/Search/type'
+import { notFound } from 'next/navigation'
 import { load } from 'outstatic/server'
 
 export const getLatestProjects = async () => {
@@ -75,4 +76,32 @@ export const getAllTags = async () => {
     })
 
     return groupedTags
+}
+
+export const getProjectBySlug = async (slug: string) => {
+    const db = await load().catch((error) => {
+        console.log(error)
+    })
+
+    const post: OutstaticSchema | undefined = await db
+        ?.find(
+            {
+                collection: 'projects',
+                slug: slug,
+            },
+            [
+                'coverImage',
+                'title',
+                'description',
+                'slug',
+                'content',
+                'tags',
+                'iframes',
+            ]
+        )
+        .first()
+
+    if (!post) notFound()
+
+    return post
 }

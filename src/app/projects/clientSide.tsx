@@ -31,7 +31,10 @@ const ClientSideProjects = (props: Props) => {
             lastPageIndex
         )
         setLoading(false)
-        return pageContent
+        return pageContent.map((value) => ({
+            ...value,
+            slug: `/project/${value.slug}`,
+        }))
     }, [pagination.currentPage, filteredProjects])
 
     useEffect(() => {
