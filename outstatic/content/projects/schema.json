@@ -5,18 +5,7 @@
     "tags": {
       "required": true,
       "description": "Tags for filtering purposes",
-      "fieldType": "Tags",
-      "dataType": "array",
-      "title": "tags",
       "values": [
-        {
-          "value": "test",
-          "label": "Test"
-        },
-        {
-          "value": "test1",
-          "label": "Test1"
-        },
         {
           "value": "nextJs",
           "label": "Next.js"
@@ -41,7 +30,10 @@
           "value": "prismaOrm",
           "label": "Prisma ORM"
         }
-      ]
+      ],
+      "fieldType": "Tags",
+      "dataType": "array",
+      "title": "tags"
     },
     "iframes": {
       "required": false,
