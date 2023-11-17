@@ -1,0 +1,99 @@
+.project-layout {
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    
+    @include desktop {
+        padding: 0 1.5rem;
+    }
+
+    @include tablet {
+        padding: 0 1.25rem;
+    }
+
+    @include mobile {
+        padding: 0 0.625rem;
+    }
+
+
+    .markdown {
+        display: flex;
+        flex-flow: column;
+        color: $dark-gray-1;
+
+        h1 {
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            border-bottom: 1px solid $dark-gray-1;
+        }
+        
+        h3 {
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        
+        p {
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 1rem;
+        }
+
+        a {
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            color: $dark-gray-0;
+        }
+
+        ul {
+            margin-left: 1.25rem;
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    h1.title {
+        color: $dark-gray-1;
+    }
+
+    .post-tags {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 0.625rem;
+
+        div.tag {
+            display: inline-flex;
+            padding: 0.125rem 0.625rem;
+            justify-content: center;
+            align-items: center;
+            gap: 0.3125rem;
+            border-radius: 0.25rem;
+            background: $dark-gray-1;
+            box-shadow: 0 0 0.25rem 0 rgb($black, 0.25) inset;
+            color: $white;
+
+            svg.tag-icon {
+                width: 1rem;
+                height: 1rem;
+                fill: $white;
+            }
+        }
+    }
+}

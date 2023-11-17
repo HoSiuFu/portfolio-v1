@@ -12,7 +12,7 @@ tags: [{"label":"Next.js","value":"nextJs"},{"label":"React","value":"react"},{"
 publishedAt: '2023-11-17T17:42:17.356Z'
 ---
 
-This project is quite simple as it served as an introduction to **Next.js** and a good practice for **Typescript**, which I had just learned recently, and wanted to improve on, and it was only logical because I have already previous experience with **React**. This project is based on a tutorial made by [Web Dev Simplefied](https://www.youtube.com/@WebDevSimplified), to see the specific tutorial [follow this link](https://www.youtube.com/watch?v=NgayZAuTgwM).
+This project is quite simple as it served as an introduction to **Next.js** and a good practice for **Typescript**, which I had just learned recently, and wanted to improve on, and it was only logical because I have already previous experience with **React**. This project is based on a tutorial made by [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified), to see the specific tutorial [follow this link](https://www.youtube.com/watch?v=NgayZAuTgwM).
 
 The project is not a one-to-one replica of the tutorial, as I decided to experiment with other **Next.js** features to see if I understood what was done in the tutorial, and could expand on it with the information given by the **Next.js** documentation and other sources.
 

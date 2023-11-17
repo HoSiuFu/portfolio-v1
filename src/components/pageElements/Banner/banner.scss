@@ -34,16 +34,19 @@ div.banner {
         .title {
             color: $white;
             text-align: center;
+            mix-blend-mode: difference;
         }
 
         .subtitle {
             color: $white;
             text-align: center;
+            mix-blend-mode: difference;
         }
 
         .text {
             color: $white;
             text-align: center;
+            mix-blend-mode: difference;
         }
     }
 }
