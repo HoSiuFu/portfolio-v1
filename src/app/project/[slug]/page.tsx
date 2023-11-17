@@ -40,6 +40,49 @@ const Project = async (params: Params) => {
                         className={
                             'grid-desktop-start-1 grid-desktop-end-13 grid-tablet-start-1 grid-tablet-end-7 grid-mobile-start-1 grid-mobile-end-5 markdown'
                         }
+                        components={{
+                            h1(initProps) {
+                                const props = { ...initProps }
+                                delete props['node']
+                                return (
+                                    <h1 className='h1 content-h3' {...props} />
+                                )
+                            },
+                            h2(initProps) {
+                                const props = { ...initProps }
+                                delete props['node']
+                                return (
+                                    <>
+                                        <h2
+                                            className='h2 content-h2'
+                                            {...props}
+                                        />
+                                    </>
+                                )
+                            },
+                            h3(initProps) {
+                                const props = { ...initProps }
+                                delete props['node']
+                                return (
+                                    <h3 className='h3 content-h3' {...props} />
+                                )
+                            },
+                            p(initProps) {
+                                const props = { ...initProps }
+                                delete props['node']
+                                return <p className='p content-p' {...props} />
+                            },
+                            a(initProps) {
+                                const props = { ...initProps }
+                                delete props['node']
+                                return <a className='p content-a' {...props} />
+                            },
+                            ul(initProps) {
+                                const props = { ...initProps }
+                                delete props['node']
+                                return <ul className='content-ul' {...props} />
+                            },
+                        }}
                     >
                         {post.content}
                     </Markdown>
