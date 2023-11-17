@@ -1,39 +1,10 @@
 {
-  "commit": "1a7cd5b61ab862b961d76428353dd1dd78be87a4",
-  "generated": "2023-11-17T18:56:42.997Z",
+  "commit": "182579d947016cf0ee9d090662439576f6054395",
+  "generated": "Fri, 17 Nov 2023 18:56:53 GMT",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "3c3892ef464e6a1f38de7bef12ab81a79736dbca",
-        "hash": "4044980124",
-        "path": "outstatic/content/projects/test1.md"
-      },
-      "author": {
-        "name": "Danilo Andrade",
-        "picture": "https://avatars.githubusercontent.com/u/35849416?v=4"
-      },
-      "collection": "projects",
-      "coverImage": "/images/fcc26c72d326c15deb2429107d2c3903-Q5Nz.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat eu nisl ac ornare. Suspendisse enim mi, facilisis eu scelerisque placerat, sagittis sed erat. Donec in elit malesuada, egestas ante a, pulvinar orci. Aliquam et tortor ut mauris aliquet pharetra nec ac elit. Ut imperdiet molestie ante a porttitor. Pellentesque vitae convallis velit. Vivamus eget semper ex. Mauris feugiat libero dolor, ut laoreet sem volutpat nec. Proin consequat ligula in libero ullamcorper condimentum. Pellentesque sollicitudin sem nisl, eu consectetur nunc pellentesque ut. Proin suscipit sed mi quis suscipit. Pellentesque blandit augue a sodales tincidunt. Praesent dictum sollicitudin maximus. Etiam sed turpis ac tellus tincidunt egestas non eu urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;",
-      "iframes": "[ { \"src\": \"https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FtWISqbVVkIsSxS5jaQnk3s%2FPortofolio-V1%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3Da17niBJLLYSKfFi8-1\",  \"title\": \"Porfolio Typos & Colors\" }, { \"src\": \"https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FtWISqbVVkIsSxS5jaQnk3s%2FPortofolio-V1%3Ftype%3Ddesign%26node-id%3D7%253A2%26mode%3Ddesign%26t%3Da17niBJLLYSKfFi8-1\",  \"title\": \"Porfolio Atoms\" } ]",
-      "publishedAt": "2023-11-13T17:44:17.276Z",
-      "slug": "test1",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Test",
-          "value": "test"
-        },
-        {
-          "label": "Test1",
-          "value": "test1"
-        }
-      ],
-      "title": "Test1"
-    },
-    {
-      "__outstatic": {
-        "commit": "1a7cd5b61ab862b961d76428353dd1dd78be87a4",
+        "commit": "ebe466c160a335048b6884fbc2f8e747d099b77f",
         "hash": "1050583005",
         "path": "outstatic/content/projects/next-to-do-list.md"
       },
