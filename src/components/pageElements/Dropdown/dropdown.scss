@@ -1,0 +1,136 @@
+div.dropdown-container {
+    width: 17.1875rem;
+    position: relative;
+    
+    button.dropdown-button {
+        all: unset;
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background: $white;
+        align-items: center;
+        padding: 0.625rem;
+        color: $dark-gray-1;
+        box-shadow: 0 0.25rem 0.25rem 0 rgb($black, 0.25);
+        border-radius: 0.25rem;
+
+        &:hover {
+            background: $gray-0;
+        }
+
+        .arrow-icon {
+            width: 1rem;
+            height: 1rem;
+            fill: $dark-gray-1;
+            transform: rotate(90deg);
+            transition: transform 0.5s ease-in-out;
+
+            &.rotate-upper {
+                transform: rotate(-90deg);
+            }
+        }
+    }
+
+    .dropdown-options {
+        button.dropdown-option {
+            all: unset;
+            align-self: stretch;
+            display: flex;
+            justify-content: space-between;
+            background: $white;
+            align-items: center;
+            padding: 0.625rem;
+            color: $dark-gray-1;
+    
+            &:hover {
+                background: $red-2;
+                color: $white;
+            }
+        }
+    }
+
+    @include desktop {
+        button.expanded {
+            border-radius: 0.25rem 0.25rem 0 0;
+        }
+
+        .dropdown-options {
+            z-index: 5;
+            position: absolute;
+            width: 100%;
+            display: none;
+            align-self: stretch;
+            flex-flow: column;
+            box-shadow: 0 0.25rem 0.25rem 0 rgb($black, 0.25);
+            border-radius: 0 0 0.25rem 0.25rem;
+            overflow: hidden;
+
+            &.expanded {
+                display: flex;
+            }
+        }
+    }
+
+    @include apply-to-multiple-media(mobile, tablet) {
+        .dropdown-options {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            background: rgba($black, 0.25);
+
+            &.expanded {
+                display: flex;
+                flex-flow: column;
+                width: 100dvw;
+                height: 100dvh;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .modal-outer-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-self: stretch;
+                flex-flow: row;
+
+                .modal-content {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    min-width: 18.75rem;
+                    max-width: 30rem;
+                    width: 100%;
+                    background: $white;
+                    border-radius: 0.25rem;
+                    overflow: hidden;
+                    flex-flow: column;
+    
+                    h3.title {
+                        margin-bottom: 1rem;
+                        color: $dark-gray-1
+                    }
+                }
+            }
+        }
+    }
+
+    @include tablet {
+        .dropdown-options {
+            &.expanded {
+                padding: 1.25rem;
+            }
+        }
+    }
+
+    @include mobile {
+        .dropdown-options {
+            &.expanded {
+                padding: 0.625rem;
+            }
+        }
+    }
+}
