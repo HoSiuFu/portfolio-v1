@@ -16,6 +16,30 @@
         {
           "value": "test1",
           "label": "Test1"
+        },
+        {
+          "value": "nextJs",
+          "label": "Next.js"
+        },
+        {
+          "value": "react",
+          "label": "React"
+        },
+        {
+          "value": "scss",
+          "label": "SCSS"
+        },
+        {
+          "value": "typescript",
+          "label": "Typescript"
+        },
+        {
+          "value": "html",
+          "label": "HTML"
+        },
+        {
+          "value": "prismaOrm",
+          "label": "Prisma ORM"
         }
       ]
     },

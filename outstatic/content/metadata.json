@@ -1,6 +1,6 @@
 {
-  "commit": "3c3892ef464e6a1f38de7bef12ab81a79736dbca",
-  "generated": "2023-11-13T18:00:20.088Z",
+  "commit": "39ded8257265f6ce6c5fdb585eb7b306fe7eb437",
+  "generated": "2023-11-17T18:31:29.989Z",
   "metadata": [
     {
       "__outstatic": {
@@ -49,11 +49,56 @@
           "value": "test"
         },
         {
-          "value": "test1",
-          "label": "Test1"
+          "label": "Test1",
+          "value": "test1"
         }
       ],
       "title": "Test1"
+    },
+    {
+      "__outstatic": {
+        "commit": "39ded8257265f6ce6c5fdb585eb7b306fe7eb437",
+        "hash": "2281456790",
+        "path": "outstatic/content/projects/next-to-do-list.md"
+      },
+      "author": {
+        "name": "Danilo Andrade",
+        "picture": ""
+      },
+      "collection": "projects",
+      "coverImage": "/images/screenshot-from-2023-11-17-17-52-02-M5NT.png",
+      "description": "A very simple project that was used to introduce me to Next.js (specifically Next v13) on a more practical way.",
+      "iframes": "",
+      "publishedAt": "2023-11-17T17:42:17.356Z",
+      "slug": "next-to-do-list",
+      "status": "draft",
+      "tags": [
+        {
+          "label": "Next.js",
+          "value": "nextJs"
+        },
+        {
+          "label": "React",
+          "value": "react"
+        },
+        {
+          "label": "SCSS",
+          "value": "scss"
+        },
+        {
+          "label": "Typescript",
+          "value": "typescript"
+        },
+        {
+          "label": "HTML",
+          "value": "html"
+        },
+        {
+          "label": "Prisma ORM",
+          "value": "prismaOrm"
+        }
+      ],
+      "title": "Next To Do List"
     }
   ]
 }
