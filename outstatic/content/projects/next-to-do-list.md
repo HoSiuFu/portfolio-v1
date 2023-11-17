@@ -38,3 +38,5 @@ For this project, the following technologies were used:
 
 - [Prisma](https://www.prisma.io/)
 
+- [ESLint](https://eslint.org/)
+
