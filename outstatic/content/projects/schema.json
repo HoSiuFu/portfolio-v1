@@ -29,6 +29,14 @@
         {
           "value": "prismaOrm",
           "label": "Prisma ORM"
+        },
+        {
+          "value": "webDevelopment",
+          "label": "Web Development"
+        },
+        {
+          "value": "frontendDevelopment",
+          "label": "Frontend Development"
         }
       ],
       "fieldType": "Tags",

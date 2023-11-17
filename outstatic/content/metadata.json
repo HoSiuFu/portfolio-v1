@@ -1,11 +1,11 @@
 {
-  "commit": "182579d947016cf0ee9d090662439576f6054395",
-  "generated": "Fri, 17 Nov 2023 18:56:53 GMT",
+  "commit": "168fdfe9f1be0f1d0b1e6d7876564c92980b6843",
+  "generated": "2023-11-17T23:46:13.114Z",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "ebe466c160a335048b6884fbc2f8e747d099b77f",
-        "hash": "1050583005",
+        "commit": "168fdfe9f1be0f1d0b1e6d7876564c92980b6843",
+        "hash": "3377060951",
         "path": "outstatic/content/projects/next-to-do-list.md"
       },
       "author": {
@@ -43,6 +43,14 @@
         {
           "label": "Prisma ORM",
           "value": "prismaOrm"
+        },
+        {
+          "label": "Web Development",
+          "value": "webDevelopment"
+        },
+        {
+          "label": "Frontend Development",
+          "value": "frontendDevelopment"
         }
       ],
       "title": "Next To Do List"
