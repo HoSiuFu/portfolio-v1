@@ -1,11 +1,11 @@
 {
-  "commit": "5f792e2714a6359e6655888f8ea697c61f1cfa53",
-  "generated": "Sat, 18 Nov 2023 16:05:13 GMT",
+  "commit": "ff0d679e04aecfd505de5baa118b051940408a89",
+  "generated": "2023-11-18T16:47:02.059Z",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "9f13d6e097c67c6228e0895e29f03ba8ea7e588f",
-        "hash": "426922624",
+        "commit": "ff0d679e04aecfd505de5baa118b051940408a89",
+        "hash": "3476299989",
         "path": "outstatic/content/projects/next-to-do-list.md"
       },
       "author": {
@@ -18,7 +18,7 @@
       "iframes": "",
       "publishedAt": "2023-11-17T17:42:17.356Z",
       "slug": "next-to-do-list",
-      "status": "draft",
+      "status": "published",
       "tags": [
         {
           "label": "Next.js",
