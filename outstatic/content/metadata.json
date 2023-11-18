@@ -1,11 +1,11 @@
 {
-  "commit": "c5fd30d21af23e35f10f3fba54012af22c763727",
-  "generated": "Fri, 17 Nov 2023 23:53:48 GMT",
+  "commit": "6e03afa99376f690281d6c889e85c0660c148d8f",
+  "generated": "2023-11-18T16:03:17.162Z",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "3c4b2858cc7d481e3a0b95984e89c2bf51a0e3fa",
-        "hash": "4211080751",
+        "commit": "6e03afa99376f690281d6c889e85c0660c148d8f",
+        "hash": "426922624",
         "path": "outstatic/content/projects/next-to-do-list.md"
       },
       "author": {
