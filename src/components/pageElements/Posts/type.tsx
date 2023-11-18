@@ -12,4 +12,5 @@ export type OutstaticSchema<
         }
         tags?: Array<TagObject>
         iframes?: string
+        projectUrl?: string
     }

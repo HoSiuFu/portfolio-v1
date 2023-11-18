@@ -5,6 +5,7 @@ import { turnStringToJSONObject } from '@/helpers/string.helper'
 import { getDocumentSlugs } from 'outstatic/server'
 import React from 'react'
 import Markdown from 'react-markdown'
+import ProjectUrlButton from './clientSide'
 
 interface Params {
     params: {
@@ -75,7 +76,13 @@ const Project = async (params: Params) => {
                             a(initProps) {
                                 const props = { ...initProps }
                                 delete props['node']
-                                return <a className='p content-a' {...props} />
+                                return (
+                                    <a
+                                        className='p content-a'
+                                        {...props}
+                                        target='_blank'
+                                    />
+                                )
                             },
                             ul(initProps) {
                                 const props = { ...initProps }
@@ -86,6 +93,9 @@ const Project = async (params: Params) => {
                     >
                         {post.content}
                     </Markdown>
+                    {post.projectUrl && (
+                        <ProjectUrlButton projectUrl={post.projectUrl} />
+                    )}
                     {post.iframes && turnStringToJSONObject(post.iframes) && (
                         <IframeContainer
                             iframeOptions={turnStringToJSONObject(post.iframes)}
