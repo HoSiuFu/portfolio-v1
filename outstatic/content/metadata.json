@@ -1,11 +1,11 @@
 {
-  "commit": "0e9bed79b89261f56911153dc54ed3be3c218587",
-  "generated": "Sat, 18 Nov 2023 16:50:17 GMT",
+  "commit": "129fbd6f184e86875d94efe9da60c1a5dd0ec799",
+  "generated": "2023-11-18T17:59:40.249Z",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "12bd2048f24c29cc8020a0213d3428d2a300e5bf",
-        "hash": "3476299989",
+        "commit": "129fbd6f184e86875d94efe9da60c1a5dd0ec799",
+        "hash": "401336064",
         "path": "outstatic/content/projects/next-to-do-list.md"
       },
       "author": {
@@ -16,6 +16,7 @@
       "coverImage": "/images/screenshot-from-2023-11-17-17-52-02-M5NT.png",
       "description": "A very simple project that was used to introduce me to Next.js (specifically Next v13) on a more practical way.",
       "iframes": "",
+      "projectUrl": "https://github.com/HoSiuFu/next-to-do-list-tutorial",
       "publishedAt": "2023-11-17T17:42:17.356Z",
       "slug": "next-to-do-list",
       "status": "published",
