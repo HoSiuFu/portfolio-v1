@@ -13,6 +13,7 @@ export const getLatestProjects = async () => {
         ?.find(
             {
                 collection: 'projects',
+                status: 'published',
             },
             ['coverImage', 'title', 'description', 'slug']
         )
@@ -36,6 +37,7 @@ export const getAllProjects = async () => {
         ?.find(
             {
                 collection: 'projects',
+                status: 'published',
             },
             ['coverImage', 'title', 'description', 'slug']
         )
@@ -58,6 +60,7 @@ export const getAllTags = async () => {
         ?.find(
             {
                 collection: 'projects',
+                status: 'published',
             },
             ['tags']
         )
@@ -87,6 +90,7 @@ export const getProjectBySlug = async (slug: string) => {
         ?.find(
             {
                 collection: 'projects',
+                status: 'published',
                 slug: slug,
             },
             [
@@ -97,6 +101,7 @@ export const getProjectBySlug = async (slug: string) => {
                 'content',
                 'tags',
                 'iframes',
+                'projectUrl',
             ]
         )
         .first()
