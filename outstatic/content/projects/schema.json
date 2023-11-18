@@ -49,6 +49,13 @@
       "fieldType": "Text",
       "dataType": "string",
       "title": "iframes"
+    },
+    "projectUrl": {
+      "required": false,
+      "description": "The URL of the project that is mentioned in the post ",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Project URL"
     }
   }
 }
