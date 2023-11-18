@@ -1,6 +1,6 @@
 {
-  "commit": "41f78d9c3098cbf3b0488f98d4e47fedcb36466f",
-  "generated": "Sat, 18 Nov 2023 17:59:54 GMT",
+  "commit": "15c3d59d956e8b8f6e09cd86e895f396805293c7",
+  "generated": "2023-11-18T18:00:31.532Z",
   "metadata": [
     {
       "__outstatic": {
@@ -55,6 +55,32 @@
         }
       ],
       "title": "Next To Do List"
+    },
+    {
+      "__outstatic": {
+        "commit": "15c3d59d956e8b8f6e09cd86e895f396805293c7",
+        "hash": "403006143",
+        "path": "outstatic/content/projects/test.md"
+      },
+      "author": {
+        "name": "Danilo Andrade",
+        "picture": ""
+      },
+      "collection": "projects",
+      "coverImage": "",
+      "description": "",
+      "iframes": "",
+      "projectUrl": "",
+      "publishedAt": "2023-11-18T18:00:01.844Z",
+      "slug": "test",
+      "status": "draft",
+      "tags": [
+        {
+          "label": "Web Development",
+          "value": "webDevelopment"
+        }
+      ],
+      "title": "test"
     }
   ]
 }
