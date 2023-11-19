@@ -25,25 +25,28 @@ div.banner {
         align-items: center;
         flex-flow: column;
         gap: 0.625rem;
-        min-height: 27.5rem;
+        min-height: 26.25rem;
 
         @include mobile {
-            min-height: 16rem;
+            min-height: 14.75rem;
         }
 
         .title {
             color: $white;
             text-align: center;
+            mix-blend-mode: difference;
         }
 
         .subtitle {
             color: $white;
             text-align: center;
+            mix-blend-mode: difference;
         }
 
         .text {
             color: $white;
             text-align: center;
+            mix-blend-mode: difference;
         }
     }
 }

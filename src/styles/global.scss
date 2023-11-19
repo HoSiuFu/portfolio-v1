@@ -11,6 +11,7 @@
 @import '../app/about/about';
 @import '../app/projects/projects';
 @import '../app/contacts/contacts';
+@import '../app/project/[slug]/project';
 
 @import '../components/buttons/IconButton/iconButton';
 @import '../components/buttons/Button/button';
@@ -20,6 +21,13 @@
 @import '../components/pageElements/PostCard/postCard';
 @import '../components/Footer/footer';
 @import '../components/pageElements/Loading/loading';
+@import '../components/buttons/Tag/tag';
+@import '../components/pageElements/Search/search';
+@import '../components/pageElements/Search/SearchBar/searchBar';
+@import '../components/pageElements/Pagination/PaginationElement/paginationElement';
+@import '../components/pageElements/Pagination/pagination';
+@import '../components/pageElements/Dropdown/dropdown';
+@import '../components/pageElements/IframeContainer/iframeContainer';
 
 * {
   box-sizing: border-box;

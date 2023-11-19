@@ -28,11 +28,14 @@ const PostCard = (props: PostCardProps) => {
         <div
             className={`post-card grid-desktop-start-${props.gridColumnDesktop.start} grid-desktop-end-${props.gridColumnDesktop.end} grid-tablet-start-${props.gridColumnTablet.start} grid-tablet-end-${props.gridColumnTablet.end} grid-desktop-end-${props.gridColumnDesktop.end} grid-mobile-start-${props.gridColumnMobile.start} grid-mobile-end-${props.gridColumnMobile.end}`}
         >
-            <Image
-                className='cover'
-                src={props.cover || DefaultPlaceholder}
-                alt='Post Image'
-            />
+            <div className='cover'>
+                <Image
+                    fill
+                    className='cover'
+                    src={props.cover || DefaultPlaceholder}
+                    alt='Post Image'
+                />
+            </div>
             <h3 className='h3 title'>{props.title}</h3>
             {props.description && (
                 <p className='p description'>{props.description}</p>

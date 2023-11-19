@@ -20,6 +20,12 @@ div.projects {
         color: $dark-gray-1;
     }
 
+    .pagination-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .no-projects {
         margin: auto;
         display: flex;

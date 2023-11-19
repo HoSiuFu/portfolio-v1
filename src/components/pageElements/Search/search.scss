@@ -1,0 +1,72 @@
+div.search-tag-func {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    .upper-part{
+        .clear-tags-section {
+            display:  flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            .text-tags-applied {
+                color: $dark-gray-0;
+            }
+        }
+    }
+
+    &.interacted {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        gap: 1.25rem;
+        background: $gray-0;
+        overflow-y: scroll;
+
+        @include desktop {
+            padding: 0.8275rem 1.5rem;
+        }
+    
+        @include tablet {
+            padding: 0.8275rem 1.25rem;
+        }
+    
+        @include mobile {
+            padding: 0.8275rem 0.625rem;
+        }
+
+        .upper-part {
+            position: sticky;
+            padding-bottom: 0.25rem;
+            border-bottom: 0.0625rem solid $dark-gray-1;
+        }
+    
+
+        div#close-button {
+            display: flex;
+            justify-content: flex-end;
+
+            svg.close-icon {
+                width: 1.5rem;
+                height: 1.5rem;
+                fill: $dark-gray-1;
+            }
+        }
+
+        .select-tags-title {
+            color: $dark-gray-1;
+        }
+
+        .tags-div {
+            display: flex;
+            align-items: flex-start;
+            align-content: flex-start;
+            gap: 0.625rem;
+            flex-flow: row wrap;
+        }
+    }
+}

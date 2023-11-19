@@ -1,0 +1,86 @@
+{
+  "commit": "67df8e9274efde3ecbe616fe2c6a58ecd337c107",
+  "generated": "2023-11-19T12:50:28.878Z",
+  "metadata": [
+    {
+      "__outstatic": {
+        "commit": "15c3d59d956e8b8f6e09cd86e895f396805293c7",
+        "hash": "403006143",
+        "path": "outstatic/content/projects/test.md"
+      },
+      "author": {
+        "name": "Danilo Andrade",
+        "picture": ""
+      },
+      "collection": "projects",
+      "coverImage": "",
+      "description": "",
+      "iframes": "",
+      "projectUrl": "",
+      "publishedAt": "2023-11-18T18:00:01.844Z",
+      "slug": "test",
+      "status": "draft",
+      "tags": [
+        {
+          "label": "Web Development",
+          "value": "webDevelopment"
+        }
+      ],
+      "title": "test"
+    },
+    {
+      "__outstatic": {
+        "commit": "67df8e9274efde3ecbe616fe2c6a58ecd337c107",
+        "hash": "3593296228",
+        "path": "outstatic/content/projects/next-to-do-list.md"
+      },
+      "author": {
+        "name": "Danilo Andrade",
+        "picture": ""
+      },
+      "collection": "projects",
+      "coverImage": "/images/todolist-I3Mj.jpg",
+      "description": "A very simple project that was used to introduce me to Next.js (specifically Next v13) on a more practical way.",
+      "iframes": "",
+      "projectUrl": "https://github.com/HoSiuFu/next-to-do-list-tutorial",
+      "publishedAt": "2023-11-17T17:42:17.356Z",
+      "slug": "next-to-do-list",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Next.js",
+          "value": "nextJs"
+        },
+        {
+          "label": "React",
+          "value": "react"
+        },
+        {
+          "label": "SCSS",
+          "value": "scss"
+        },
+        {
+          "label": "Typescript",
+          "value": "typescript"
+        },
+        {
+          "label": "HTML",
+          "value": "html"
+        },
+        {
+          "label": "Prisma ORM",
+          "value": "prismaOrm"
+        },
+        {
+          "label": "Web Development",
+          "value": "webDevelopment"
+        },
+        {
+          "label": "Frontend Development",
+          "value": "frontendDevelopment"
+        }
+      ],
+      "title": "Next To Do List"
+    }
+  ]
+}

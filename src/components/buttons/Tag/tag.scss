@@ -1,0 +1,49 @@
+button.tag {
+    all:unset;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 0.125rem 0.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3125rem;
+    border-radius: 0.25rem;
+    background: $dark-gray-1;
+    box-shadow: 0 0 0.25rem 0 rgb($black, 0.25) inset;
+    color: $white;
+
+    @include central-ripple-effect;
+
+    &:not(:disabled)::after {
+        transform: scale(10, 10);
+        border-radius: 100%;
+        background: radial-gradient(circle, rgba($red-1, 1) 10%, transparent 0%);
+    }
+
+    &:hover {
+        background-color: $dark-gray-0;
+    }
+
+    &:disabled {
+        background: rgb($dark-gray-1, 0.15);
+        cursor: default;
+    }
+
+    &.selected {
+        &:not(:disabled)::after {
+            background: radial-gradient(circle, rgba($dark-gray-1, 1) 10%, transparent 0%);
+        }
+
+        background: $red-1;
+        border: 0.0625rem solid $red-2;
+    }
+
+    svg.tag-icon {
+        width: 1rem;
+        height: 1rem;
+        align-items: flex-start;
+        gap: 0.625rem;
+        fill: $white;
+    }
+}

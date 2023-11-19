@@ -7,7 +7,7 @@ export default interface ButtonProps {
     type: ButtonType
     size: ButtonSize
     children: React.ReactNode
-    onClick: (e?: React.MouseEvent<HTMLElement>) => void
+    onClick: (e?: React.MouseEvent<HTMLButtonElement>) => void
     disabled?: boolean
     leftIcon?: React.ReactNode
     rightIcon?: React.ReactNode

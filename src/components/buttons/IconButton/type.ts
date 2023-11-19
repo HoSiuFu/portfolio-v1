@@ -5,6 +5,7 @@ export default interface IconButtonProps {
     href?: string
     target?: React.HTMLAttributeAnchorTarget
     onClick?: (e?: React.MouseEvent<HTMLElement>) => void
+    disabled?: boolean
 }
 
 export type IconButtonMeta = Meta<IconButtonProps>

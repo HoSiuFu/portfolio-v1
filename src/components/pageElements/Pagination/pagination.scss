@@ -1,0 +1,22 @@
+div.pagination {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.3125rem;
+
+    .arrow {
+        fill: $dark-gray-1;
+        width: 0.75rem;
+        height: 0.75rem;
+        
+        &.left  {
+            transform: rotate(180deg);
+        }
+    }
+
+    .dots {
+        width: 1.7625rem;
+        height: 1.7625rem;
+        text-align: center;
+    }
+}

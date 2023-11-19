@@ -1,0 +1,61 @@
+{
+  "title": "projects",
+  "type": "object",
+  "properties": {
+    "tags": {
+      "required": true,
+      "description": "Tags for filtering purposes",
+      "values": [
+        {
+          "value": "nextJs",
+          "label": "Next.js"
+        },
+        {
+          "value": "react",
+          "label": "React"
+        },
+        {
+          "value": "scss",
+          "label": "SCSS"
+        },
+        {
+          "value": "typescript",
+          "label": "Typescript"
+        },
+        {
+          "value": "html",
+          "label": "HTML"
+        },
+        {
+          "value": "prismaOrm",
+          "label": "Prisma ORM"
+        },
+        {
+          "value": "webDevelopment",
+          "label": "Web Development"
+        },
+        {
+          "value": "frontendDevelopment",
+          "label": "Frontend Development"
+        }
+      ],
+      "fieldType": "Tags",
+      "dataType": "array",
+      "title": "tags"
+    },
+    "iframes": {
+      "required": false,
+      "description": "Sources and titles for the Iframe Containers. It is an array of object {src, title}",
+      "fieldType": "Text",
+      "dataType": "string",
+      "title": "iframes"
+    },
+    "projectUrl": {
+      "required": false,
+      "description": "The URL of the project that is mentioned in the post ",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Project URL"
+    }
+  }
+}
