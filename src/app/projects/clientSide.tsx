@@ -44,12 +44,13 @@ const ClientSideProjects = (props: Props) => {
 
     const onClose = (searchString: string, tags: Array<string>) => {
         setLoading(true)
-        if (searchString.length !== 0 || tags.length !== 0)
+        if (searchString.length !== 0 || tags.length !== 0) {
             axios
                 .get('api/projects', {
                     params: {
                         searchString,
                         tags,
+                        projects: JSON.stringify(props.allProjects),
                     },
                 })
                 .then((response) => {
@@ -64,7 +65,7 @@ const ClientSideProjects = (props: Props) => {
 
                     setLoading(false)
                 })
-        else {
+        } else {
             setFilteredProjects(props.allProjects)
             setLoading(false)
         }
