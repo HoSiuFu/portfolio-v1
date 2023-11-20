@@ -1,6 +1,6 @@
 {
-  "commit": "67df8e9274efde3ecbe616fe2c6a58ecd337c107",
-  "generated": "2023-11-19T12:50:28.878Z",
+  "commit": "83e239b288a899a7e1105f66268bec999951c75b",
+  "generated": "2023-11-20T15:16:54.144Z",
   "metadata": [
     {
       "__outstatic": {
@@ -81,6 +81,48 @@
         }
       ],
       "title": "Next To Do List"
+    },
+    {
+      "__outstatic": {
+        "commit": "83e239b288a899a7e1105f66268bec999951c75b",
+        "hash": "3698995222",
+        "path": "outstatic/content/projects/portfolio-v1-figma-mocks.md"
+      },
+      "author": {
+        "name": "Danilo Andrade",
+        "picture": ""
+      },
+      "collection": "projects",
+      "coverImage": "",
+      "description": "This is a Figma project used to make this Portfolio, it has all the mocks and prototypes implemented in the app.",
+      "iframes": "",
+      "projectUrl": "",
+      "publishedAt": "2023-11-20T15:04:29.739Z",
+      "slug": "portfolio-v1-figma-mocks",
+      "status": "draft",
+      "tags": [
+        {
+          "label": "Figma",
+          "value": "figma"
+        },
+        {
+          "label": "UI/UX Design",
+          "value": "ui/uxDesign"
+        },
+        {
+          "label": "Web Design",
+          "value": "webDesign"
+        },
+        {
+          "label": "Responsive Design",
+          "value": "responsiveDesign"
+        },
+        {
+          "label": "Iconography",
+          "value": "iconography"
+        }
+      ],
+      "title": "Portfolio v1 Figma Mocks"
     }
   ]
 }
