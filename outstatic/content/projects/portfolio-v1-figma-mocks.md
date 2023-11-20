@@ -6,7 +6,7 @@ author:
   picture: ''
 slug: 'portfolio-v1-figma-mocks'
 description: 'This is a Figma project used to make this Portfolio, it has all the mocks and prototypes implemented in the app.'
-coverImage: ''
+coverImage: '/images/screenshot-from-2023-11-20-15-09-43-czNz.png'
 iframes: '[
     {
         "src": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FtWISqbVVkIsSxS5jaQnk3s%2FPortofolio-V1%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DRiM0vJTamYj9JlaT-1",
