@@ -57,6 +57,10 @@
         {
           "value": "iconography",
           "label": "Iconography"
+        },
+        {
+          "value": "wip (workInProgress)",
+          "label": "WIP (Work in progress)"
         }
       ],
       "fieldType": "Tags",
