@@ -17,14 +17,15 @@ iframes: '[
         "title": "Portfolio V1 - Atoms"
     },
     {
-        "src": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FtWISqbVVkIsSxS5jaQnk3s%2FPortofolio-V1%3Ftype%3Ddesign%26node-id%3D21%253A111%26mode%3Ddesign%26t%3DRiM0vJTamYj9JlaT-1",
+        "src": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FtWISqbVVkIsSxS5jaQnk3s%2FPortofolio-V1%3Ftype%3Ddesign%26node-id%3D21%253A110%26mode%3Ddesign%26t%3DRiM0vJTamYj9JlaT-1",
         "title": "Portfolio V1 - Pages"
     },
     {
         "src": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FtWISqbVVkIsSxS5jaQnk3s%2FPortofolio-V1%3Ftype%3Ddesign%26node-id%3D21-111%26t%3DAk3SMqi974U1ncgd-1%26scaling%3Dcontain%26page-id%3D21%253A110%26starting-point-node-id%3D21%253A111%26show-proto-sidebar%3D1%26mode%3Ddesign",
         "title": "Portfolio V1 - Prototype Flows"
     }
-]'
+]
+'
 projectUrl: ''
 tags: [{"label":"Figma","value":"figma"},{"label":"UI/UX Design","value":"ui/uxDesign"},{"label":"Web Design","value":"webDesign"},{"label":"Responsive Design","value":"responsiveDesign"},{"label":"Iconography","value":"iconography"},{"label":"WIP (Work in progress)","value":"wip (workInProgress)"}]
 publishedAt: '2023-11-20T15:04:29.739Z'
