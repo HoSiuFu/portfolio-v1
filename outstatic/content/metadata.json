@@ -1,6 +1,6 @@
 {
-  "commit": "1b81c3dd7b1bb1ebd1104f4ea4327b079923e487",
-  "generated": "2023-11-21T01:46:47.422Z",
+  "commit": "fc5e456aef9aeac35f1898c91b7d2fcb29ae9450",
+  "generated": "2023-11-21T01:48:26.273Z",
   "metadata": [
     {
       "__outstatic": {
@@ -84,8 +84,8 @@
     },
     {
       "__outstatic": {
-        "commit": "1b81c3dd7b1bb1ebd1104f4ea4327b079923e487",
-        "hash": "2604894870",
+        "commit": "fc5e456aef9aeac35f1898c91b7d2fcb29ae9450",
+        "hash": "2515845436",
         "path": "outstatic/content/projects/portfolio-v1-figma-mocks.md"
       },
       "author": {
@@ -99,7 +99,7 @@
       "projectUrl": "",
       "publishedAt": "2023-11-20T15:04:29.739Z",
       "slug": "portfolio-v1-figma-mocks",
-      "status": "draft",
+      "status": "published",
       "tags": [
         {
           "label": "Figma",

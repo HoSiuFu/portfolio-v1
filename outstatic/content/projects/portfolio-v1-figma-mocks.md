@@ -1,6 +1,6 @@
 ---
 title: 'Portfolio v1 Figma Mocks'
-status: 'draft'
+status: 'published'
 author:
   name: 'Danilo Andrade'
   picture: ''
@@ -15,7 +15,7 @@ publishedAt: '2023-11-20T15:04:29.739Z'
 
 This is the project that serves as the skeleton of this whole website/portfolio. This project is a result of everything that I have learned while using Figma at my previous job and all the experiments done outside my job.
 
- &nbsp;
+  &nbsp;
 
 This project is still being worked on as the portfolio is still receiving updates and improvements.
 
@@ -29,7 +29,7 @@ All the mocks of the components used in the project, as well as the pages that a
 
 You can also see the resulting prototyping of all the pages and components done in this project.
 
-  &nbsp;
+ &nbsp; 
 
 ## Check out the project
 
