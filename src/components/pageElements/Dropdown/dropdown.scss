@@ -1,6 +1,15 @@
 div.dropdown-container {
-    width: 17.1875rem;
+    min-width: 17.1875rem;
+    width: 100%;
     position: relative;
+
+    @include apply-to-multiple-media(desktop, tablet) {
+        width: 17.1875rem;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
     
     button.dropdown-button {
         all: unset;

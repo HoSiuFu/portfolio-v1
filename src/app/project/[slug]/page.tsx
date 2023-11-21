@@ -27,7 +27,10 @@ const Project = async (params: Params) => {
                 title={<>{post.title}</>}
                 text={<>{post.description}</>}
                 backgroundProperties={{
-                    backgroundImage: `url(${post.coverImage})`,
+                    backgroundImage: `linear-gradient(
+                        rgba(0, 0, 0, 0.5),
+                        rgba(0, 0, 0, 0.5)
+                      ), url(${post.coverImage})`,
                     backgroundPositionY: '50%',
                     backgroundPositionX: '50%',
                 }}
