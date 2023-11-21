@@ -39,7 +39,7 @@ export const getAllProjects = async () => {
                 collection: 'projects',
                 status: 'published',
             },
-            ['coverImage', 'title', 'description', 'slug']
+            ['coverImage', 'title', 'description', 'slug', 'tags']
         )
         .sort({
             publishedAt: -1,
