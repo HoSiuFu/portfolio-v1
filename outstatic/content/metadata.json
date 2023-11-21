@@ -1,10 +1,10 @@
 {
-  "commit": "67df8e9274efde3ecbe616fe2c6a58ecd337c107",
-  "generated": "2023-11-19T12:50:28.878Z",
+  "commit": "fc5e456aef9aeac35f1898c91b7d2fcb29ae9450",
+  "generated": "2023-11-21T01:48:26.273Z",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "15c3d59d956e8b8f6e09cd86e895f396805293c7",
+        "commit": "606bd930134328b1ea409f917c5c0f7bfb196a45",
         "hash": "403006143",
         "path": "outstatic/content/projects/test.md"
       },
@@ -30,7 +30,7 @@
     },
     {
       "__outstatic": {
-        "commit": "67df8e9274efde3ecbe616fe2c6a58ecd337c107",
+        "commit": "3eba6da4b2c9ec7b4caf446a9970d1b63d16f161",
         "hash": "3593296228",
         "path": "outstatic/content/projects/next-to-do-list.md"
       },
@@ -81,6 +81,52 @@
         }
       ],
       "title": "Next To Do List"
+    },
+    {
+      "__outstatic": {
+        "commit": "fc5e456aef9aeac35f1898c91b7d2fcb29ae9450",
+        "hash": "2515845436",
+        "path": "outstatic/content/projects/portfolio-v1-figma-mocks.md"
+      },
+      "author": {
+        "name": "Danilo Andrade",
+        "picture": ""
+      },
+      "collection": "projects",
+      "coverImage": "/images/portfoliov1-figma-M5ND.jpg",
+      "description": "This is a Figma project used to make this Portfolio, it has all the mocks and prototypes implemented in the app.",
+      "iframes": "[ { \"src\": \"https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FtWISqbVVkIsSxS5jaQnk3s%2FPortofolio-V1%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DRiM0vJTamYj9JlaT-1\", \"title\": \"Portfolio V1 - Typos & Colors\" }, { \"src\":\"https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FtWISqbVVkIsSxS5jaQnk3s%2FPortofolio-V1%3Ftype%3Ddesign%26node-id%3D7%253A2%26mode%3Ddesign%26t%3DRiM0vJTamYj9JlaT-1\", \"title\": \"Portfolio V1 - Atoms\" }, { \"src\": \"https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FtWISqbVVkIsSxS5jaQnk3s%2FPortofolio-V1%3Ftype%3Ddesign%26node-id%3D21%253A110%26mode%3Ddesign%26t%3DRiM0vJTamYj9JlaT-1\", \"title\": \"Portfolio V1 - Pages\" }, { \"src\": \"https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FtWISqbVVkIsSxS5jaQnk3s%2FPortofolio-V1%3Ftype%3Ddesign%26node-id%3D21-111%26t%3DAk3SMqi974U1ncgd-1%26scaling%3Dcontain%26page-id%3D21%253A110%26starting-point-node-id%3D21%253A111%26show-proto-sidebar%3D1%26mode%3Ddesign\", \"title\": \"Portfolio V1 - Prototype Flows\" } ] ",
+      "projectUrl": "",
+      "publishedAt": "2023-11-20T15:04:29.739Z",
+      "slug": "portfolio-v1-figma-mocks",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Figma",
+          "value": "figma"
+        },
+        {
+          "label": "UI/UX Design",
+          "value": "ui/uxDesign"
+        },
+        {
+          "label": "Web Design",
+          "value": "webDesign"
+        },
+        {
+          "label": "Responsive Design",
+          "value": "responsiveDesign"
+        },
+        {
+          "label": "Iconography",
+          "value": "iconography"
+        },
+        {
+          "label": "WIP (Work in progress)",
+          "value": "wip (workInProgress)"
+        }
+      ],
+      "title": "Portfolio v1 Figma Mocks"
     }
   ]
 }

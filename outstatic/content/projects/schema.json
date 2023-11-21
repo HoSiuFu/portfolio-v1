@@ -37,6 +37,30 @@
         {
           "value": "frontendDevelopment",
           "label": "Frontend Development"
+        },
+        {
+          "value": "figma",
+          "label": "Figma"
+        },
+        {
+          "value": "ui/uxDesign",
+          "label": "UI/UX Design"
+        },
+        {
+          "value": "webDesign",
+          "label": "Web Design"
+        },
+        {
+          "value": "responsiveDesign",
+          "label": "Responsive Design"
+        },
+        {
+          "value": "iconography",
+          "label": "Iconography"
+        },
+        {
+          "value": "wip (workInProgress)",
+          "label": "WIP (Work in progress)"
         }
       ],
       "fieldType": "Tags",
