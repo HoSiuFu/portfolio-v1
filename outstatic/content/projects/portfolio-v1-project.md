@@ -21,7 +21,7 @@ This project is currently being worked on and receiving updates, so the current 
 
  &nbsp;
 
-This project is also being used for me to test and practice what I've learned from previous experiences and learn new technologies and apply them, this helps me keep myself updated and capable.
+This project is also being used for me to test and practice what I've learned from previous experiences and learn new technologies and apply them, this helps me keep myself updated and capable for working.
 
 &nbsp;
 
