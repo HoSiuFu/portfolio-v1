@@ -1,6 +1,6 @@
 {
-  "commit": "e3c3b8ca7882024874f71e7843f3f6521f46e01f",
-  "generated": "2023-11-22T16:27:15.432Z",
+  "commit": "df91f5a45beb4e85aad317abc2570467d412b477",
+  "generated": "2023-11-22T16:54:01.849Z",
   "metadata": [
     {
       "__outstatic": {
@@ -130,8 +130,8 @@
     },
     {
       "__outstatic": {
-        "commit": "e3c3b8ca7882024874f71e7843f3f6521f46e01f",
-        "hash": "602885876",
+        "commit": "df91f5a45beb4e85aad317abc2570467d412b477",
+        "hash": "990995327",
         "path": "outstatic/content/projects/portfolio-v1-project.md"
       },
       "author": {
@@ -139,13 +139,13 @@
         "picture": ""
       },
       "collection": "projects",
-      "coverImage": "",
+      "coverImage": "/images/portfoliov1-code-cxNz.jpg",
       "description": "This is the project where all the code that gives life to this website/portfolio is stored. It uses Next.js as a basis.",
       "iframes": "",
       "projectUrl": "https://github.com/HoSiuFu/portfolio-v1",
       "publishedAt": "2023-11-22T14:24:44.465Z",
       "slug": "portfolio-v1-project",
-      "status": "draft",
+      "status": "published",
       "tags": [
         {
           "label": "Next.js",
