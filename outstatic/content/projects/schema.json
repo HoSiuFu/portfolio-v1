@@ -61,6 +61,38 @@
         {
           "value": "wip (workInProgress)",
           "label": "WIP (Work in progress)"
+        },
+        {
+          "value": "lottieFiles",
+          "label": "LottieFiles"
+        },
+        {
+          "value": "outstaticCms",
+          "label": "Outstatic CMS"
+        },
+        {
+          "value": "markdown",
+          "label": "Markdown"
+        },
+        {
+          "value": "vercel",
+          "label": "Vercel"
+        },
+        {
+          "value": "cypress",
+          "label": "Cypress"
+        },
+        {
+          "value": "esLint",
+          "label": "ESLint"
+        },
+        {
+          "value": "prettier",
+          "label": "Prettier"
+        },
+        {
+          "value": "stylelint",
+          "label": "Stylelint"
         }
       ],
       "fieldType": "Tags",

@@ -1,6 +1,6 @@
 {
-  "commit": "fc5e456aef9aeac35f1898c91b7d2fcb29ae9450",
-  "generated": "2023-11-21T01:48:26.273Z",
+  "commit": "42bdb404ca86a877f5e382e576516184bc71e008",
+  "generated": "2023-11-22T17:03:59.929Z",
   "metadata": [
     {
       "__outstatic": {
@@ -127,6 +127,92 @@
         }
       ],
       "title": "Portfolio v1 Figma Mocks"
+    },
+    {
+      "__outstatic": {
+        "commit": "42bdb404ca86a877f5e382e576516184bc71e008",
+        "hash": "1703623144",
+        "path": "outstatic/content/projects/portfolio-v1-project.md"
+      },
+      "author": {
+        "name": "Danilo Andrade",
+        "picture": ""
+      },
+      "collection": "projects",
+      "coverImage": "/images/portfoliov1-code-cxNz.jpg",
+      "description": "This is the project where all the code that gives life to this website/portfolio is stored. It uses Next.js as a basis.",
+      "iframes": "",
+      "projectUrl": "https://github.com/HoSiuFu/portfolio-v1",
+      "publishedAt": "2023-11-22T14:24:44.465Z",
+      "slug": "portfolio-v1-project",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Next.js",
+          "value": "nextJs"
+        },
+        {
+          "label": "React",
+          "value": "react"
+        },
+        {
+          "label": "SCSS",
+          "value": "scss"
+        },
+        {
+          "label": "Typescript",
+          "value": "typescript"
+        },
+        {
+          "label": "LottieFiles",
+          "value": "lottieFiles"
+        },
+        {
+          "label": "Outstatic CMS",
+          "value": "outstaticCms"
+        },
+        {
+          "label": "Markdown",
+          "value": "markdown"
+        },
+        {
+          "label": "HTML",
+          "value": "html"
+        },
+        {
+          "label": "Web Development",
+          "value": "webDevelopment"
+        },
+        {
+          "label": "Frontend Development",
+          "value": "frontendDevelopment"
+        },
+        {
+          "label": "Vercel",
+          "value": "vercel"
+        },
+        {
+          "label": "WIP (Work in progress)",
+          "value": "wip (workInProgress)"
+        },
+        {
+          "label": "Cypress",
+          "value": "cypress"
+        },
+        {
+          "label": "ESLint",
+          "value": "esLint"
+        },
+        {
+          "label": "Prettier",
+          "value": "prettier"
+        },
+        {
+          "label": "Stylelint",
+          "value": "stylelint"
+        }
+      ],
+      "title": "Portfolio V1 Project"
     }
   ]
 }
