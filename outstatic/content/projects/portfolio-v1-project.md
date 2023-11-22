@@ -15,7 +15,7 @@ publishedAt: '2023-11-22T14:24:44.465Z'
 
 This project is the website/portfolio itself, it is made with Next.js as a basis because I wanted to expand my knowledge and experience with this specific framework.
 
-&nsbp;
+&nbsp;
 
 This project is currently being worked on and receiving updates, so the current layout might suffer major changes as well as internal logic.
 
@@ -23,7 +23,7 @@ This project is currently being worked on and receiving updates, so the current 
 
 This project is also being used for me to test and practice what I've learned from previous experiences and learn new technologies and apply them, this helps me keep myself updated and capable.
 
-&nsbp;
+&nbsp;
 
 ## Technology stack
 
