@@ -1,23 +1,18 @@
 import React, { useContext } from 'react'
 import AccordionHeaderProps from './type'
-import { AccordionContext } from '..'
+import { AccordionItemContext } from '..'
 import { ArrowIcon } from '@/components/icons'
 
 const AccordionHeader = (props: AccordionHeaderProps) => {
-    const accordionContext = useContext(AccordionContext)
-
-    const onClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-        if (accordionContext.setExpanded)
-            accordionContext.setExpanded(event.currentTarget.id)
-    }
+    const accordionContext = useContext(AccordionItemContext)
 
     return (
         <button
-            onClick={onClick}
+            id={`${accordionContext.id}-content-${accordionContext.hash}`}
+            onClick={accordionContext.onClick}
             className={`accordion-header ${
-                accordionContext.expanded === props.id ? 'expanded' : ''
+                accordionContext.active ? 'expanded' : ''
             }`}
-            id={props.id}
         >
             <div className='accordion-header-info-section'>
                 <h3 className='h3 title'>{props.title}</h3>

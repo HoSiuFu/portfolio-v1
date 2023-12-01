@@ -4,6 +4,6 @@ import AccordionHeader from '.'
 
 describe('<AccordionHeader />', () => {
     it('Renders', () => {
-        cy.mount(<AccordionHeader id='test' title='test' subtitle='test' />)
+        cy.mount(<AccordionHeader title='test' subtitle='test' />)
     })
 })

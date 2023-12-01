@@ -1,12 +1,15 @@
 import React, { useContext } from 'react'
 import AccordionContentProps from './type'
-import { AccordionContext } from '..'
+import { AccordionItemContext } from '..'
 
 const AccordionContent = (props: AccordionContentProps) => {
-    const { expanded } = useContext(AccordionContext)
+    const { active, hash, id } = useContext(AccordionItemContext)
 
     return (
-        <div id={props.id} className={`accordion-content ${expanded}`}>
+        <div
+            id={`${id}-content-${hash}`}
+            className={`accordion-content ${active ? 'active' : ''}`}
+        >
             {props.children}
         </div>
     )

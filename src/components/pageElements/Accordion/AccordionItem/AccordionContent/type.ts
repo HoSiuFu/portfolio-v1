@@ -1,7 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react'
 
 export default interface AccordionContentProps {
-    id: string
     children: React.ReactNode
 }
 
