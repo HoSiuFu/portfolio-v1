@@ -29,7 +29,10 @@
 @import '../components/pageElements/Dropdown/dropdown';
 @import '../components/pageElements/IframeContainer/iframeContainer';
 @import '../components/pageElements/Accordion/accordion';
+@import '../components/pageElements/Accordion/AccordionItem/accordionItem';
 @import '../components/pageElements/Accordion/AccordionItem/AccordionHeader/accordionHeader';
+@import '../components/pageElements/Accordion/AccordionItem/AccordionContent/accordionContent';
+
 
 * {
   box-sizing: border-box;
