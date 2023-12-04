@@ -1,0 +1,21 @@
+.accordion-content-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    background: $white;
+    transition-property: max-height, padding;
+    overflow: hidden;
+    max-height: 0;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    box-sizing: content-box;
+
+    .accordion-content-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+        padding: 1rem;
+    }
+}
