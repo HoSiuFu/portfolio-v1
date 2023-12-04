@@ -8,7 +8,7 @@ const AccordionHeader = (props: AccordionHeaderProps) => {
 
     return (
         <button
-            id={`${accordionContext.id}-content-${accordionContext.hash}`}
+            id={`${accordionContext.id}-header-${accordionContext.hash}`}
             onClick={accordionContext.onClick}
             className={`accordion-header ${
                 accordionContext.active ? 'expanded' : ''
@@ -20,7 +20,7 @@ const AccordionHeader = (props: AccordionHeaderProps) => {
                     <p className='p subtitle'>{props.subtitle}</p>
                 )}
             </div>
-            <ArrowIcon className='arrow-icon' />
+            <ArrowIcon className={`arrow-icon`} />
         </button>
     )
 }

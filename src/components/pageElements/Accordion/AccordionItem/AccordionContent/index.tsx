@@ -1,36 +1,43 @@
 'use client'
 
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect } from 'react'
 import AccordionContentProps from './type'
 import { AccordionItemContext } from '..'
 
 const AccordionContent = (props: AccordionContentProps) => {
     const { active, hash, id } = useContext(AccordionItemContext)
-    const [contentHeight, setContentHeight] = useState<string>('0')
 
     useEffect(() => {
-        const handleWindowResize = () => {
-            const content = document.getElementById(`${id}-content-${hash}`)
+        const content = document.getElementById(
+            `${id}-content-${hash}`
+        ) as HTMLDivElement
 
-            if (content) {
-                setContentHeight(`${content.scrollHeight}px`)
+        if (content) {
+            const onTransitionEnd = () => {
+                if (content.style.maxHeight !== '0px')
+                    content.style.maxHeight = 'none'
+
+                content.removeEventListener('transitionend', onTransitionEnd)
+            }
+
+            content.addEventListener('transitionend', onTransitionEnd)
+
+            if (!active && content.style.maxHeight !== '0px') {
+                content.style.maxHeight = `${content.scrollHeight}px`
+                content.style.maxHeight = `${content.scrollHeight}px`
+                content.style.maxHeight = '0px'
+            } else {
+                content.style.maxHeight = `${content.scrollHeight}px`
             }
         }
-
-        window.addEventListener('resize', handleWindowResize)
-
-        return () => {
-            window.removeEventListener('resize', handleWindowResize)
-        }
-    })
+    }, [active, hash, id])
 
     return (
         <div
             id={`${id}-content-${hash}`}
-            className={`accordion-content ${active ? 'active' : ''}`}
-            style={{ maxHeight: active ? contentHeight : '0' }}
+            className={`accordion-content-outer ${active ? 'expanded' : ''}`}
         >
-            {props.children}
+            <div className='accordion-content-inner'>{props.children}</div>
         </div>
     )
 }

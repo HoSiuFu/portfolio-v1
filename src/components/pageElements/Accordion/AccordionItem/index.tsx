@@ -22,14 +22,19 @@ const AccordionItem = (props: AccordionItemProps) => {
             hash,
             active: expanded === props.id,
             onClick: () => {
-                if (setExpanded) setExpanded(props.id)
+                if (setExpanded) {
+                    setExpanded(expanded === props.id ? '' : props.id)
+                }
             },
         }
     }, [expanded, hash, props.id, setExpanded])
 
     return (
         <AccordionItemContext.Provider value={value}>
-            <div className='accordion-item' id={`${props.id}-${hash}`}>
+            <div
+                className={`accordion-item ${value.active ? 'expanded' : ''}`}
+                id={`${props.id}-${hash}`}
+            >
                 {props.children}
             </div>
         </AccordionItemContext.Provider>

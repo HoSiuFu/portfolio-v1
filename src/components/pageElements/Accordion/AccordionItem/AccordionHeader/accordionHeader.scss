@@ -8,9 +8,11 @@ button.accordion-header {
     gap: 1rem;
     align-self: stretch;
     width: 100%;
-    border-radius: 0.25rem;
     background: $white;
-    box-shadow: 0 4px 4px 0 rgba($black, 0.25);
+    
+    &:hover {
+        background: $gray-0;
+    }
 
     .accordion-header-info-section {
         display: flex;
@@ -38,6 +40,7 @@ button.accordion-header {
         height: 1.125rem;
         transform: rotate(90deg);
         fill: $dark-gray-1;
+        transition: transform 300ms ease-in-out;
     }
 
     &.expanded {
@@ -55,6 +58,7 @@ button.accordion-header {
 
         svg.arrow-icon {
             fill: $white;
+            transform: rotate(-90deg);
         }
     }
 }
