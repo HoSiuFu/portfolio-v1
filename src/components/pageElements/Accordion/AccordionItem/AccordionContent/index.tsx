@@ -1,39 +1,43 @@
 'use client'
 
-import React, { useContext, useEffect } from 'react'
+import React, { useContext, useEffect, useRef } from 'react'
 import AccordionContentProps from './type'
 import { AccordionItemContext } from '..'
 
 const AccordionContent = (props: AccordionContentProps) => {
     const { active, hash, id } = useContext(AccordionItemContext)
+    const ref = useRef<HTMLDivElement>(null)
 
     useEffect(() => {
-        const content = document.getElementById(
-            `${id}-content-${hash}`
-        ) as HTMLDivElement
-
-        if (content) {
+        if (ref && ref.current) {
             const onTransitionEnd = () => {
-                if (content.style.maxHeight !== '0px')
-                    content.style.maxHeight = 'none'
+                if (ref.current) {
+                    if (ref.current.style.maxHeight !== '0px' && active)
+                        ref.current.style.maxHeight = 'none'
 
-                content.removeEventListener('transitionend', onTransitionEnd)
+                    ref.current.removeEventListener(
+                        'transitionend',
+                        onTransitionEnd
+                    )
+                }
             }
 
-            content.addEventListener('transitionend', onTransitionEnd)
+            ref.current.addEventListener('transitionend', onTransitionEnd)
 
-            if (!active && content.style.maxHeight !== '0px') {
-                content.style.maxHeight = `${content.scrollHeight}px`
-                content.style.maxHeight = `${content.scrollHeight}px`
-                content.style.maxHeight = '0px'
+            if (!active) {
+                ref.current.style.maxHeight = `${ref.current.scrollHeight}px`
+                ref.current.style.maxHeight = `${ref.current.scrollHeight}px`
+                ref.current.style.maxHeight = '0px'
             } else {
-                content.style.maxHeight = `${content.scrollHeight}px`
+                console.log('here')
+                ref.current.style.maxHeight = `${ref.current.scrollHeight}px`
             }
         }
     }, [active, hash, id])
 
     return (
         <div
+            ref={ref}
             id={`${id}-content-${hash}`}
             className={`accordion-content-outer ${active ? 'expanded' : ''}`}
         >

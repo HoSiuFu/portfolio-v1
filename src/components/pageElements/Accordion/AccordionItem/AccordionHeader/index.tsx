@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useContext } from 'react'
 import AccordionHeaderProps from './type'
 import { AccordionItemContext } from '..'
