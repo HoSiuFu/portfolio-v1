@@ -1,0 +1,64 @@
+button.accordion-header {
+    all: unset;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    padding: 0.625rem;
+    align-items: center;
+    gap: 1rem;
+    align-self: stretch;
+    width: 100%;
+    background: $white;
+    
+    &:hover {
+        background: $gray-0;
+    }
+
+    .accordion-header-info-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        flex: 1 0 0;
+
+        h3.title {
+            align-self: stretch;
+            text-align: justify;
+            color: $dark-gray-1;
+            font-weight: 700;
+        }
+
+        p.subtitle {
+            align-self: stretch;
+            color: $dark-gray-0;
+            text-align: justify;
+        }
+    }
+
+    svg.arrow-icon {
+        width: 1.125rem;
+        height: 1.125rem;
+        transform: rotate(90deg);
+        fill: $dark-gray-1;
+        transition: transform 300ms ease-in-out;
+    }
+
+    &.expanded {
+        background: $red-1;
+
+        .accordion-header-info-section {
+            h3.title {
+                color: $white;
+            }
+
+            p.subtitle {
+                color: $gray-0;
+            }
+        }
+
+        svg.arrow-icon {
+            fill: $white;
+            transform: rotate(-90deg);
+        }
+    }
+}

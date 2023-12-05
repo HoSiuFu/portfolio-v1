@@ -1,0 +1,18 @@
+.accordion-item {
+    display: flex;
+    flex-flow: column;
+    border-bottom: 1px solid $gray-0;
+    overflow: hidden;
+
+    &:last-of-type {
+        border-bottom: 0;
+    }
+
+    &.expanded {
+        border: 1px solid $red-1;
+
+        &:last-of-type {
+            border-radius: 0 0 0.25rem 0.25rem;
+        }
+    }
+}

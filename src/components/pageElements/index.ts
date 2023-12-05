@@ -6,6 +6,10 @@ import SearchBar from './Search/SearchBar'
 import Search from './Search'
 import Pagination from './Pagination'
 import IframeContainer from './IframeContainer'
+import Accordion from './Accordion'
+import AccordionItem from './Accordion/AccordionItem'
+import AccordionHeader from './Accordion/AccordionItem/AccordionHeader'
+import AccordionContent from './Accordion/AccordionItem/AccordionContent'
 
 export {
     Banner,
@@ -16,4 +20,8 @@ export {
     Search,
     IframeContainer,
     Pagination,
+    Accordion,
+    AccordionItem,
+    AccordionHeader,
+    AccordionContent,
 }
