@@ -71,7 +71,7 @@ const Search = (props: SearchProps) => {
                     onClick={onClickSearchInput}
                 />
                 {selectedTags.length !== 0 && (
-                    <div className='grid-desktop-start-1 grid-desktop-end-13 grid-tablet-start-1 grid-tablet-end-7 grid-mobile-start-1 grid-mobile-start-5 clear-tags-section'>
+                    <div className='grid-desktop-start-1 grid-desktop-end-13 grid-tablet-start-1 grid-tablet-end-7 grid-mobile-start-1 grid-mobile-end-5 clear-tags-section'>
                         <p className='p text-tags-applied'>
                             {selectedTags.length} Tags Applied
                         </p>
