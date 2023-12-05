@@ -1,5 +1,11 @@
 import React from 'react'
-import { Banner } from '@/components/pageElements'
+import {
+    Accordion,
+    AccordionContent,
+    AccordionHeader,
+    AccordionItem,
+    Banner,
+} from '@/components/pageElements'
 
 const About = () => {
     return (
@@ -28,6 +34,45 @@ const About = () => {
             <div className='outter-about'>
                 <div className='layout'>
                     <div className='grid-desktop-start-1 grid-desktop-end-13 grid-tablet-start-1 grid-tablet-end-7 grid-mobile-start-1 grid-mobile-end-5 about'>
+                        <div className='section'>
+                            <h1 className='h1 title'>Random Facts About Me</h1>
+                            <div className='subsection'>
+                                <h2 className='h2 subtitle'>
+                                    A man of many interests
+                                </h2>
+                                <p className='p text'>
+                                    I&apos;m interested in lots of different
+                                    aspects of life, like Woodworking, Software
+                                    Development, 3D Design, specifically 3D
+                                    Modeling, UI/UX Design, Frontend
+                                    Development, and Game Development.
+                                </p>
+                            </div>
+                            <div className='subsection'>
+                                <h2 className='h2 subtitle'>
+                                    Attention and Care
+                                </h2>
+                                <p className='p text'>
+                                    I want clients and end users to have the
+                                    best experience possible while using
+                                    products made by me, this means that both
+                                    functionality and looks of the product are
+                                    important for me. This also translates to my
+                                    peers/colleagues as I like to help them
+                                    whenever I can.
+                                </p>
+                            </div>
+                            <div className='subsection'>
+                                <h2 className='h2 subtitle'>
+                                    Variety and Diversity
+                                </h2>
+                                <p className='p text'>
+                                    I am the type of person who likes to try new
+                                    concepts and experiences, sometimes a little
+                                    bit too much.
+                                </p>
+                            </div>
+                        </div>
                         <div className='section'>
                             <h1 className='h1 title'>Education and Courses</h1>
                             <ul className='aligned-list'>
@@ -63,16 +108,13 @@ const About = () => {
                         </div>
                         <div className='section'>
                             <h1 className='h1 title'>My Work Experience</h1>
-                            <ul className='aligned-list'>
-                                <li>
-                                    <h2 className='h2 subtitle'>
-                                        Software Engineer at Decsis - Sistemas
-                                        de Informação, S.A., Évora, Portugal
-                                    </h2>
-                                    <div className='upper-item-content spaced'>
-                                        <h3 className='h3 date'>
-                                            From 06/07/2020 to 26/05/2023
-                                        </h3>
+                            <Accordion id='work-experience'>
+                                <AccordionItem id='decsis'>
+                                    <AccordionHeader
+                                        title='Software Engineer at Decsis - Sistemas de Informação, S.A., Évora, Portugal'
+                                        subtitle='From 06/07/2020 to 26/05/2023'
+                                    />
+                                    <AccordionContent>
                                         <ul className='aligned-list'>
                                             <h2 className='h2 subtitle'>
                                                 UI/UX Designer
@@ -95,6 +137,7 @@ const About = () => {
                                                 React and SCSS;
                                             </li>
                                         </ul>
+                                        <br />
                                         <ul className='aligned-list'>
                                             <h2 className='h2 subtitle'>
                                                 Frontend Developer (Main
@@ -138,6 +181,7 @@ const About = () => {
                                                 for 2+ projects;
                                             </li>
                                         </ul>
+                                        <br />
                                         <ul className='aligned-list'>
                                             <h2 className='h2 subtitle'>
                                                 Backend Developer
@@ -160,6 +204,7 @@ const About = () => {
                                                 projects;
                                             </li>
                                         </ul>
+                                        <br />
                                         <ul className='aligned-list'>
                                             <h2 className='h2 subtitle'>
                                                 Operations
@@ -182,24 +227,9 @@ const About = () => {
                                                 latest version;
                                             </li>
                                         </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className='section'>
-                            <h1 className='h1 title'>Random Facts About Me</h1>
-                            <div className='subsection'>
-                                <h2 className='h2 subtitle'>
-                                    A man of many interests
-                                </h2>
-                                <p className='p text'>
-                                    I&apos;m interested in lots of different
-                                    aspects of life, like Woodworking, Software
-                                    Development, 3D Design, specifically 3D
-                                    Modeling, UI/UX Design, Frontend
-                                    Development, and Game Development.
-                                </p>
-                            </div>
+                                    </AccordionContent>
+                                </AccordionItem>
+                            </Accordion>
                         </div>
                     </div>
                 </div>
