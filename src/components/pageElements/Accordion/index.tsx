@@ -1,3 +1,5 @@
+'use client'
+
 import React, { createContext, useEffect, useMemo, useState } from 'react'
 import AccordionProps, { AccordionContextTypes } from './type'
 

@@ -1,3 +1,5 @@
+'use client'
+
 import React, { createContext, useContext, useMemo } from 'react'
 import AccordionItemProps, { AccordionItemContextTypes } from './type'
 import { AccordionContext } from '..'
@@ -13,13 +15,13 @@ const AccordionItem = (props: AccordionItemProps) => {
     const { expanded, setExpanded } = useContext(AccordionContext)
 
     const hash = useMemo(() => {
-        return Math.random().toString(11).substring(2, 11)
+        return Math.random().toString(20).substring(2, 11)
     }, [])
 
     const value = useMemo<AccordionItemContextTypes>(() => {
         return {
             id: props.id,
-            hash,
+            hash: Math.random().toString(30).substring(2, 11),
             active: expanded === props.id,
             onClick: () => {
                 if (setExpanded) {
@@ -27,7 +29,7 @@ const AccordionItem = (props: AccordionItemProps) => {
                 }
             },
         }
-    }, [expanded, hash, props.id, setExpanded])
+    }, [expanded, props.id, setExpanded])
 
     return (
         <AccordionItemContext.Provider value={value}>
